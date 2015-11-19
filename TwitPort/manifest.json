@@ -1,0 +1,32 @@
+{
+  "name": "TwitPort by Ant-Man",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Reports twitter accounts from a raw list the entered in the options page",
+  "browser_action" : {
+    "default_icon": "unnamed.png",
+    "default_title": "Click here to shoot the canon!"
+  },
+  "background" : {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["https://twitter.com/*&tool=on"],
+    "js": ["content.js"],
+    "css": ["content.css"]
+    
+  }, {
+    "matches" : ["*://*/*"],
+    "js" : ["scrape.js"]
+  }, {
+    "matches": ["https://twitter.com/account/suspended"],
+    "js" : ["suspended.js"]
+  }],
+  "permissions": [
+    "storage",
+    "notifications" 
+  ],
+  "options_page": "options/options.html"
+   
+}
