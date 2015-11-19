@@ -43,7 +43,7 @@ var oauth = {
 
 tag = new tumblr.Tagged('tag', oauth);
 
-//tag.search(tag[, options], callback) {
+//tag.search(tag['isis', options], callback) {
 //  if (error) {
 //    throw new Error(error);
 
