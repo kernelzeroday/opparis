@@ -43,13 +43,13 @@ var oauth = {
 
 tag = new tumblr.Tagged('tag', oauth);
 
-tag.search(tag[, options], callback) {
-  if (error) {
-    throw new Error(error);
+//tag.search(tag[, options], callback) {
+//  if (error) {
+//    throw new Error(error);
 
-}
-console.log(response.posts);
-});
+//}
+//console.log(response.posts);
+//});
 
 
 var Twitter = require('twitter');
