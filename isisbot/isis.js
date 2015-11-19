@@ -2,6 +2,35 @@
 
 //usage: nodejs script.js keyword
 
+var FB = require('fb');
+
+
+FB.api('oauth/access_token', {
+    client_id: 'app_id',
+    client_secret: 'app_secret',
+    grant_type: 'client_credentials'
+}, function (res) {
+    if(!res || res.error) {
+        console.log(!res ? 'error occurred' : res.error);
+        return;
+    }
+
+    var accessToken = res.access_token;
+});
+
+var FB = require('fb');
+
+FB.api('4', { fields: ['id', 'name'] }, function (res) {
+  if(!res || res.error) {
+    console.log(!res ? 'error occurred' : res.error);
+    return;
+  }
+  console.log(res.id);
+  console.log(res.name);
+});
+
+
+
 var tumblr = require('tumblr');
 
 var oauth = {
