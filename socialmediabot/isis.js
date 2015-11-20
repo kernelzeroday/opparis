@@ -20,6 +20,21 @@ fb.next(function(err, res) {
 });
 
 
+ddg = require('ddg')
+
+ddg.query(process.argv[2], function(err, data){
+    results = data.RelatedTopics; //related topics is a list of 'related answers'
+    for (i=0;i<results.length;i++) {
+        console.log(''+results[i].FirstURL)
+        console.log('-- '+results[i].Text)
+        console.log('\n')
+    }
+});
+
+ddg.query(process.argv[2], function(err, data){
+    console.log(data) // logs a dictionary with all return fields
+});
+
 
 var tumblr = require('tumblr');
 
