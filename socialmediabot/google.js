@@ -1,6 +1,6 @@
 var google = require('google')
 
-google.resultsPerPage = 100
+google.resultsPerPage = 500
 var nextCounter = 0
 
 google(process.argv[2], function (err, next, links){
