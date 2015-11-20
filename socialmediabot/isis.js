@@ -1,4 +1,4 @@
-//install: npm install -g twitter
+//install: npm install  twitter/fb-search/node-irc/tumblr
 
 //usage: nodejs script.js keyword
 
@@ -7,7 +7,7 @@ var FacebookSearch = require('facebook-search');
 var fb = new FacebookSearch('FB API APP KEY HERE', 'FB API SECRET HERE'); 
 
 var searchFor = {
-	type: 	'page',
+	type: 	'page',		//need to also add event/group
 	q:	process.argv[2],
 };
 
@@ -57,7 +57,7 @@ client.stream('statuses/filter', {track: process.argv[2]}, function(stream){
 //   	console.log(tweet.text);
         console.log('tweet id:',tweet.id, 'user id:', tweet.user.id, 'tweet: ', tweet.text);
 	console.log();
-	client.say('tweet id:',tweet.id, 'user id:', tweet.user.id, 'tweet: ', tweet.text);
+//	client.say('tweet id:',tweet.id, 'user id:', tweet.user.id, 'tweet: ', tweet.text);
   });
 
   stream.on('error', function(error) {
