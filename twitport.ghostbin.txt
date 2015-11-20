@@ -1,0 +1,24 @@
+TwitPort 0.0.2 By Ant-Man
+[=== HOW TO INSTALL ===]
+1. Get TwitPort file from here: http://s000.tinyupload.com/index.php?file_id=20116764514424825876 .
+2. Go to the extension page(chrome://extensions).
+3. Drag and drop the file.
+4. Install.
+
+[=== HOW TO SET ===]
+0. TwitPort will by default use the AnonOps botnet targets, if you wish to use a list, follow steps 1-4 as described.
+ if you wish to use AnonOps botnet targets again follow steps 1-4, while in step 3, the input box should be empty.
+1. After installation, right click on TwitPort icon.
+2. Click on options.
+3. In the options page, add the URL to the list( Example: https://ghostbin.com/paste/mnkfv/raw by Phisher).
+4. Click save.
+
+[=== HOW TO USE ==]
+1. Click on TwitPort icon.
+2. Relax, chill and enjoy while TwitPort will report IS twitter users in the background.
+3. When TwitPort is finished, It will notify you(if you using a list).
+4. To exit/close TwitPort, simply close the tab it has opened.
+
+For any questions or bugs report(Bug-Bounty = 1 free cookie per bug)
+please contact Ant-Man(On AnonOps IRC as "Ant-Man", on jabber "ant-man@jabber.ccc.de", on email "ant-man@sigaint.org" or on twitter "@AntMan1337")
+
