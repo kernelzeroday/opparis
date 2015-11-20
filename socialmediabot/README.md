@@ -13,7 +13,12 @@ npm install tumblr
 
 you will then need to put your facebook api client and secret keys as well as your twitter api keys into the apropriate configuration directives.
 
-node isis.js allahu& node isis.js ackbar&
+$ node isis.js allahu& node isis.js ackbar&
+
+
+if you prefer to just start scraping the web immediatly, npkm install google and then 
+
+$ node google.js `shuf -n 1 keywords.txt`
 
 
 this will give you a bunch of garbage to sort through. enjoy.
