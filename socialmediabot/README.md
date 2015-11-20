@@ -4,12 +4,18 @@ This ever changing and growing bot is meant to take an input query and return a 
 
 In the meantime install nodejs 5.0.0 and run the following in this directory if anything doesnt work
 
-npm install twitter
-npm install google
-npm install ddg
-npm install facebook-search
-npm install node-irc
-npm install tumblr
+$ npm install twitter
+
+$ npm install google
+
+$ npm install ddg
+
+$ npm install facebook-search
+
+$ npm install node-irc
+
+$ npm install tumblr
+
 
 you will then need to put your facebook api client and secret keys as well as your twitter api keys into the apropriate configuration directives.
 
