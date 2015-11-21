@@ -17,3 +17,32 @@ there are a lot of tools installed on the docker image and it is being updated r
 to connect to anonops from inside the docker image simply type `anonops`
 
 Thanks!
+
+
+
+
+
+
+
+#OpParis-Dev Official Paste
+
+If you have any projects related to #OpParis or #OpISIS, and you wish to share the code, please contact the admins.
+If you wish to use your programming skills(If you can see that you can help any of the projects).
+Here are some on-going development projects you can assist:
+
+1. Hijacking Twitter ISIS Tags bot:
+Languages: Python, Node.js, any other back-end language.
+Features:
+	1. Finding Twitter tags that IS men are using.
+	2. Tweet("Hijack") tweets with those tags.
+
+2. TwitPort( http://pastebin.com/rFH57zkM ):
+TwitPort is an IS twitter reporter add-on for chrome.
+
+Languages: Javascript.
+Features to include next:
+	1. Proxy/Tor support.
+	2. Support list of links ("https://twitter.com/ISISaccount" and not only list containing only "ISISaccount").
+
+3. Official IS reports site:
+Languages: PHP
