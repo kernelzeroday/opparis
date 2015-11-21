@@ -1,0 +1,12 @@
+
+SCRIPTS TO GENERATE TOPICS 4 SEARCHES TO CAUGHT ISIS GUYS
+----------------------------------------------------------
+
+genphrasesis.py		-> https://ghostbin.com/paste/cquop   ### Run this script to generate 20 isis combos 4 searching. Currently it gives good results
+phrases2.py		-> https://ghostbin.com/paste/zcwgf ### english phrases list to translate
+translatephrases.py	-> https://ghostbin.com/paste/y92dv ### this one translates automatically phrases2 generating phrasesis.py   
+			### plz, execute with "torify python translatephrases.py" to avoid leaving traces
+
+Thats all. Good hunt ;)
+
+beta version 
