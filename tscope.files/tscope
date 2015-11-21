@@ -1,0 +1,60 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var Twit = require('twit');
+var pluralize = require('pluralize');
+var chalk = require('chalk');
+
+var statuses = require('./config/statuses.json'),
+	hashtags = require('./config/hashtags.json'),
+	auth = require('./config/auth.json');
+
+program
+	.version('0.0.1')
+	.option('-r --reply', 'Reply to found tweets with a random status [Default: false]')
+	.option('-c --count', 'Number of tweets to search for [Default: 10]')
+	.parse(process.argv);
+
+if(hashtags.tagNames.length > 0) {
+	console.log(chalk.green('Searching for ' + hashtags.tagNames.length + ' ' + pluralize('hashtag', hashtags.tagNames.length)));
+}
+else {
+	console.warn(chalk.red('Please include at least 1 hashtag in config/hashtags.json'));
+}
+
+if(program.reply) {
+	if(statuses.tweets.length > 0) {
+		console.log(chalk.green('Replying with ' + statuses.tweets.length + ' possible ' + pluralize('status', statuses.tweets.length)));
+	}
+	else {
+		console.warn(chalk.red('Please include at least 1 status in config/statuses.json'));
+	}
+}
+
+if(!program.count || program.count < 0) {
+	program.count = 10;
+}
+
+var T = new Twit(auth);
+
+var searchTweets = function (q, count) {
+	T.get('search/tweets', {
+		q: q,
+		count: count
+	}, function(err, data, response) {
+		if(!err) {
+			var tweets = data.stasuses;
+
+			if(program.reply) {
+				console.log('WIP: Post a random reply from statuses.tweets to userID of this tweet');
+			}
+		}
+		else {
+			console.error(err);
+			console.log(chalk.yellow("Make sure you've added the right keys in `config/auth.json`. View `README.md` for more help."))
+		}
+	});
+}
+
+var hashtagQuery = "#" + hashtags.tagNames.toString().replace(',', '&#');
+return searchTweets(hashtagQuery, program.count);
