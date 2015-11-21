@@ -1,0 +1,25 @@
+{
+  "name": "slowloris-dos",
+  "version": "0.1.0",
+  "description": "A sloworis denial of service attack application",
+  "keywords": [
+    "sloworis",
+    "denial of service",
+    "dos"
+  ],
+  "license": "MIT",
+  "author": "Tim Severien",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/timseverien/slowloris-dos.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timseverien/slowloris-dos.git"
+  },
+  "dependencies": {
+    "randstream": "^0.3.2",
+    "socks5-http-client": "^1.0.1",
+    "stream-throttle": "^0.1.3"
+  }
+}
