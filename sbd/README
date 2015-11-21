@@ -1,0 +1,82 @@
+Warning! This is a test release ONLY! The security and authenicity of this
+program provides is not guaranteed! Therefore, by default the server
+program will NOT execute any commands, even if a correct key combination
+is used. Please wait for a stable version before deploying on a system.
+
+If you do test and find a bug, please submit it to wilbjor@iit.edu
+
+Thanks!
+Jordan Wilberding
+
+About
+-----
+One-time cipher based back door program for executing emergency commands.
+
+Secure Back Door(SBD) is an alternative to leaving SSH open all the time.
+It is based on a secure one-time keypad method, that insures maximum 
+security. Since SBD is very small, it is less likely to have security
+exploits, as compared to SSH. Therefore, you could leave an important 
+computer up and running with just sbdd running in the background, and
+if an emergency came about, you could simple execute a command to bring
+ssh up, then work on the computer as regular. It would be as simple
+as doing ./sbd domain.com "/etc/init.d/sshd start", and with the proper
+key file set, the remote computer would have ssh up and running shortly.
+
+Protocol
+--------
+
+The protocol is detailed to an extent in the text file PROTOCOL, I
+will update it with more details as I have time, but the most important
+details are included already.
+
+If you are a crypt analysis, or just like a challenge, I appreciate anyone
+who is willing to look through the protocol and/or code and point out
+possible security implications and flaws in design! If you do find 
+something wrong please e-mail me at wilbjor@iit.edu
+
+Compilation In Linux
+--------------------
+
+g++ -Wall -O2 -o sbdd ssocket.cpp sha1.cpp utils.cpp sbdd.cpp
+g++ -Wall -O2 -o sbd csocket.cpp sha1.cpp utils.cpp sbd.cpp
+
+Compilation In Windows
+----------------------
+
+Open sbdd.dsp and sbd.dsp and build normally.
+
+
+Running Server
+-------
+
+./sbdd port -- Default port is 31415
+Example 1: ./sbdd
+Example 2: ./sbdd 5151
+
+
+Running Client
+--------------
+
+./sbd hostname port message
+Example 1: ./sbd localhost "/etc/init.d/sshd start" 
+Example 2: ./sbd localhost 5151 "/etc/init.d/sshd start"
+
+
+Random Bytes Setup
+------------------
+
+In order for the client and server to properly work, you will
+need to have identical files enckey.bits for client, and deckey.bits
+for the server. You should also have an additional file of random bytes
+named athkey.bits for the server, which is used for authenticating the
+client against basic IP sproofs. There is a copy of each provided with 
+the distribution for testing, but they should not be used for production, 
+you need to generate your OWN random bytes. The easiest way might be to goto
+http://www.random.org, or create your own grand scheme. The production
+of random bytes is not provided by sbd.
+
+Contact
+-------
+
+Report bugs at http://sourceforge.net/tracker/?group_id=120366&atid=686787
+or email me at wilbjor@iit.edu

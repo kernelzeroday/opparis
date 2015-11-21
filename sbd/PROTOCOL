@@ -1,0 +1,71 @@
+Protocol v2(last edited 12-27-2004)
+* The protocol is still under construction, and is subject to change
+* This is the second version of the SBD protocol. This version uses
+  one time pad(OTP) along with HMAC-SHA1, as opposed to version 1 which
+  uses only OTP. This version is meant to be based on current well
+  known cryptographic primitives, while version 1 is based on experimental
+  home-brewed primitives. For the time being, all release of SBD will
+  use version 2 of the protocol, but the version 1 protocol will always
+  be available from CVS.
+
+Overview:
+
+The SBD protocol is based on the strength of using a one-time 
+symmetric key. This means that each the user and the server are
+the only ones that share the key. Failure to keep this key a secret
+results in the failure of the protocol, therefore it is important that
+you keep your key a secret.
+
+The power of a one-time key is largely based on the randomness of the key,
+the method used should be generated from a truly random source if possible. 
+The generation of random keys is left up to the user, since it goes beyond
+the scope of SBD. Linux provides a source of fairly random numbers from
+/dev/random. Also, there are a few sites such as http://www.random.org
+that provide users with random bytes. You should keep in mind though, that
+random.org does not offer secure access for downloading these randomly 
+generated numbers. For most purposes, a simple program that generates
+pseudo-random numbers using the C rand() function should be sufficient for
+most users.
+
+Goals:
+
+The goals of SBD v2 are as follows:
+
+* Should allow remote execution of commands
+* Should be secure as possible
+* Should be minimal as possible to avoid inherent security risks that large
+  programs such as SSH carry with them
+* Should provide some basic methods for IP spoofing protection
+* Should provide some basic methods for Denial of Service protection
+
+Algorithm/Implementation:
+
+1. The client connects to server, the server sends 20 random bytes to
+   the client as a challenge.
+2. The client takes 20-bytes of OTP and computes the HMAC-SHA1 using
+   the 20-bytes of OTP as it's shared secret, and the combination of challenge
+   and the command as it's message.
+3. The client prepends the HMAC-SHA1 hash with the original command
+   and xors the whole thing with as many bytes of OTP as needed,
+   then sends it to the server.
+4. The server computes the amount of key it needs (20 bytes for the
+   SHA1 seed, plus however many bytes long the encrypted message is),
+   then reads the OTP from file.
+5. It uses the last n bytes of OTP from the key to xor the file back
+   to it's original state, where n is the length of the message.
+6. It then strips the command, and computes the HMAC-SHA1 hash using
+   the first 20 bytes of OTP as the share secret, and the original challenge
+   plus the original command as it's message.
+7. It then checks this hash with the one that was prepended to the 
+   original command that the client sent. If they match, the command
+   is executed.
+
+      
+Notes:
+* For the checksum, SBD currently uses SHA-1 with HMAC, with that said, 
+  it might be changed to a different hash in the future, the protocol 
+  itself is not dependent on SHA-1.
+* Things such as allowing or denying certain IP's, or throttling the number
+  of connections are assumed to be taken care of by the firewall. This 
+  functionality might be in SBD some day, but for now is best handled by the
+  firewall.      	     
