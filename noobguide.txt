@@ -1,0 +1,76 @@
+Name: TwitterReport (v.1.0.3) [Tutorial 1.3]
+About: Uses anon op queue system to report twitter accounts.
+Credit: Based on script from @anonymous247742
+How-to-guide updated by: whiteVillain, se7en
+         
+ 
+ 
+ 
+ ========== Requirements: ============
+ - Python 2.7 (https://www.python.org/downloads/) , !!NOT Python 3.5!!
+ - Python Requests Module
+ - Splinter
+ - Fake twitter account
+ - twitterReport.py (http://pastebin.com/Yzx9kntK) or DOWNLOAD (http://www.xup.in/dl,74461639/twitterReport.py/)
+                                                                Virustotal Scan twitterReport.py:   http://bit.ly/1PS9oQp
+ 
+ ====== Fake Twitter account: =======
+ 
+ Step1: Open https://twitter.com/  and  http://10minutemail.com/10MinuteMail/index.html
+ Step2: Copy the e-mail adress from 10minutemail and use it as your e-mail to register a new account
+ Step3: Create the new account
+ Step4: After some seconds, look inside 10minutemail, there should be a new mail inside your inbox (from twitter), open it and
+        approve the account by clicking on the button/link to approve
+ 
+ =========== Linux/Unix: =============
+ - Linux Pip install instructions: http://pip.readthedocs.org/en/stable/installing/
+ - Requests module instructions: http://stackoverflow.com/questions/17309288/importerror-no-module-named-requests
+ - Splinter module instructions : http://splinter.readthedocs.org/en/latest/install.html
+ 
+   Usage:  
+                       python twitterReport.py -u YOUR_USER_NAME
+ 
+ 
+ 
+ ===========   Windows:  =============
+ Step1: Make sure pip is installed: http://pip.readthedocs.org/en/stable/installing/
+ Step2: Open up cmd and run
+                       c:\python27\scripts\easy_install.exe request
+        and hit enter
+ Step3: Download the zip:   https://github.com/cobrateam/splinter/archive/master.zip   and unzip on your disk    
+ Step4: Go in the folder where you unziped splinter, now hold SHIFT and click with the right mousebutton inside the                    
+        folder (on an empty space), and click:  Open Command Window Here launch:
+                       python setup.py install
+        and hit enter
+        (If this wont work, keep in mind that python can also be launched with:
+                       c:\python27\python.exe
+       
+        so for this part the solution of a this problem would be:
+                       c:\python27\python.exe setup.py install
+        and hit enter
+ Step5: Copy the text from this script:   http://pastebin.com/Yzx9kntK  open Notepad (Hold WindowsKey + R -> Type: notepad)
+        Paste the complete text in notepad, save the file inside a folder of your choice as:   twitterReport.py
+        #Alternatively you can download it here:    http://www.xup.in/dl,74461639/twitterReport.py/    !BUT CHANGE THE NAME TO
+        -->  twitterReport.py
+ Step6: Open the folder where twitterReport.py has been saved, now hold SHIFT and click with the right mousebutton inside the                    
+        folder(on an empty space), and click:  Open Command Window Here  , now a terminal/cmd/black box has opened again, however
+        the first text is different(its the location of this folder)
+ Step7: Type inside terminal/cmd:
+                        c:\python27\python.exe twitterReport.py -u YOUR_USER_NAME_FROM_TWITTER
+        and hit enter
+ Step8: A new line will appear with Password: enter here your password for your username, don't worry that nothing happens while
+        typing your password, thats completely normal, if done hit enter
+ Step9: Make sure that the browser that pops up is in full window mode, else it wont work.
+ 
+        DONE! Now you can see that approved accounts are getting fully automatically reported!
+        To stop the auto reporter, simply close the terminal/cmd window.
+     
+                           
+ 
+ 
+ 
+ 
+==================================
+ Need Help or Find a Bug?
+ - /join #OpParis - https://webchat.anonops.com/?channels=OpParis
+
