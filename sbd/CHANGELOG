@@ -1,0 +1,83 @@
+======================== Released 0.5 ========================
+
+02-20-2005
+* Fixed a few minor compiler warnings
+* Updated license year to 2005
+* Uncommented execution code in sbdd, so now sbdd will execute incoming commands
+* Updated README documentation for compilation
+
+01-14-2005
+* Clarified PROTOCOL documentation
+* Stripped server to client response(IE: client will not know if command
+  is executed or not)
+
+======================== Released 0.4 ========================
+
+12-29-2004
+* Added dummy configuration file, in case people try using it without
+  reading the README
+* Update windows workspace files to include utils.cpp/h and sha1.cpp/h
+* Removed uneeded variables
+
+12-28-2004
+* Moved out common code and put it into utils.cpp
+
+12-27-2004
+* Updated PROTOCOL to reflect change for protocol for version 2
+
+12-26-2004
+* Change SBD over to second version protocol which uses OTP along with
+  HMAC-SHA1 instead of just OTP like version 1 does.
+
+======================== Released 0.3 ========================
+
+12-25-2004
+* Cleaned up sockets a bit to remove unneeded code
+* Added rudimentary client to server verification to stop most types of
+  of IP spoofing attacks.
+* The delta between the verification key is now xor'd with more key
+* Added file PROTOCOL that briefly specifies the SBD protocol
+* Added file LICENSE that details the GPL license
+* Updated README to include the use of athkey.bits for the server(sbdd)
+* Added better description of SBD to readme
+
+12-24-2004
+* Added basic server response to tell client if command was authenticated
+* Changed sbdd over to use logging to file sbdd.log, instead of stdout
+* Moved file truncating out of encryption function for the client, and into
+  the main function. This allows us to more easily delete the bytes only
+  after we receive a positive response from the server
+
+======================== Released 0.2 ========================
+
+12-23-2004
+* Fixed workspaces for windows
+* Fixed compilation errors on windows
+
+12-22-2004
+* More cleanups, and removal of uneeded variables
+
+======================== Released 0.1 ========================
+
+12-21-2004
+* Released first version as 0.1
+* Changed most pointers to vectors where appropiate, so we don't
+  have to worry about the memory as much.
+* Cleaned up code and added comments
+* Re-enabled the deletion of bytes from key files when authentic command
+  is recieved.
+
+12-20-2004
+* Added delta support for cmd locations
+* Fixed a bug dealing with the allocation of memory
+
+12-19-2004
+* Added MD5 checksum support, for verification
+
+10-24-2004
+* Changed to different sock class
+* Made fixes so it works in both Windows and Linux
+* Update TODO and README
+
+10-23-2004
+* Added initial import into CVS at sourceforge (Jordan)

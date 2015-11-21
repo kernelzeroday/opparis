@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo ""
+echo ""
+echo "No configuration is needed, just run the following commands..."
+echo ""
+echo "g++ -Wall -O2 -o sbdd ssocket.cpp sha1.cpp utils.cpp sbdd.cpp"
+echo "g++ -Wall -O2 -o sbd csocket.cpp sha1.cpp utils.cpp sbd.cpp"
