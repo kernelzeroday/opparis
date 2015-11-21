@@ -10,6 +10,10 @@ and
 
 `cd /isis/opparis`
 
-Thanks!
-
 We are located on #opparis-dev irc.anonops.com
+
+there are a lot of tools installed on the docker image and it is being updated regularly as the prefered environment for scripts and tools to be run in because it has all dependancies and packages you may need. 
+
+to connect to anonops from inside the docker image simply type `anonops`
+
+Thanks!
