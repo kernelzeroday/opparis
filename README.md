@@ -23,8 +23,9 @@ Thanks!
 
 
 
-
 #OpParis-Dev Official Paste
+
+All projects sources(And more): https://github.com/rainthundermoon/opparis 
 
 If you have any projects related to #OpParis or #OpISIS, and you wish to share the code, please contact the admins.
 If you wish to use your programming skills(If you can see that you can help any of the projects).
@@ -36,7 +37,13 @@ Features:
 	1. Finding Twitter tags that IS men are using.
 	2. Tweet("Hijack") tweets with those tags.
 
-2. TwitPort( http://pastebin.com/rFH57zkM ):
+2. Node.js Scapy:
+Required Knowledge:
+	1. Networks.
+	2. Raw Sockets and sockets in general.
+Languages: Node.js(duh!)
+
+3. TwitPort( http://pastebin.com/rFH57zkM ):
 TwitPort is an IS twitter reporter add-on for chrome.
 
 Languages: Javascript.
@@ -44,5 +51,26 @@ Features to include next:
 	1. Proxy/Tor support.
 	2. Support list of links ("https://twitter.com/ISISaccount" and not only list containing only "ISISaccount").
 
-3. Official IS reports site:
-Languages: PHP
+4. Data Science on IS.
+
+5. Official IS reports site:
+Languages: PHP.
+
+6. Pursuing IS affiliates on the deep web:
+Required knowledge:
+	1. Fundamental command line insight.
+	2. Understanding of TOR and I2P.
+	3. Staying hidden while snooping on forums.
+
+7. Arabic Translator:
+Languages: Python
+
+8. Isis Flag Finder:
+Required Knowledge:
+	1. Opencv
+Languages: Python.
+
+9. Isis Web Spider:
+Languages: Python.
+
+
