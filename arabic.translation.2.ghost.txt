@@ -1,0 +1,20 @@
+
+translation tools by beta
+----------------------------------------------------------
+
+generator.py	->> https://ghostbin.com/paste/ngm55   ### Run this script to generate isis combos 4 searching. 
+		### Currently it gives good results. features: configurable from cmdline, unlimited random multiphrase
+
+translator.py	->> https://ghostbin.com/paste/fajzr  ### translator english 2 arab and arab to english
+		### plz, execute with "torify python translator.py <args>" to avoid leaving traces
+
+phrases.ara     ->> https://ghostbin.com/paste/eyz4w ### arabic phrases list
+phrases.eng	->> https://ghostbin.com/paste/npy6v ### english phrases list
+
+
+
+beta version 2
+
+more coming soon! ;)
+Thats all. Good hunt ;)
+
