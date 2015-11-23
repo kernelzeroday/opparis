@@ -19,7 +19,7 @@ to connect to anonops from inside the docker image simply type `anonops`
 Thanks!
 
 
-
+Check out some info here: https://oasis.sandstorm.io/shared/fC311wGUaTUS-oFOAZHY9FncVDfD7Zj2TYB119LJbY7
 
 
 
