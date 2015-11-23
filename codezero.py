@@ -3,8 +3,7 @@
 #We are Anonymous. We are Legion. We do not forgive. We do not forget. Expect us
 #Details:It is a script to scan a list for for banned and active twitter accounts
 #Author: codezero
-#Version: 0.05
-
+#Version: 0.07
 import urllib2
 import httplib
 
@@ -52,6 +51,8 @@ with open(inlist, "r") as ins:
     	    print('HTTPException' +" "+url)
 	    ferror.write('HTTPException' +" "+url)
 	    ierror += 1
+	except (KeyboardInterrupt, SystemExit):
+            raise
 	except:
  	    print("Something weird happened" +" "+url)
 	    ferror.write("Something weird happened" +" "+url)
@@ -75,4 +76,3 @@ print("Scanned "+str(i)+" link(s) "+str(iban)+" banned profile(s) "+str(iactive)
 fban.close()
 factive.close()
 ferror.close()
-
