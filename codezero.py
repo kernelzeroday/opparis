@@ -52,6 +52,11 @@ with open(inlist, "r") as ins:
     	    print('HTTPException' +" "+url)
 	    ferror.write('HTTPException' +" "+url)
 	    ierror += 1
+	except:
+ 	    print("Something weird happened" +" "+url)
+	    ferror.write("Something weird happened" +" "+url)
+	    ierror += 1
+
 
 	if stringbanned in html:
 	    fban.write(url)
@@ -70,3 +75,4 @@ print("Scanned "+str(i)+" link(s) "+str(iban)+" banned profile(s) "+str(iactive)
 fban.close()
 factive.close()
 ferror.close()
+
