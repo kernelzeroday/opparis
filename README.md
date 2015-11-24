@@ -2,6 +2,8 @@
 
 This is the development github page for #opparis-dev on irc.anonops.com
 
+We have a collection of fun utilities and resources in the /extra/ folder.
+
 To get started go ahead and install docker on the platform of your choice and run 
 
 `docker run -it kernelzeroday/opparis bash`
