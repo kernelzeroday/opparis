@@ -1,0 +1,350 @@
+# German Translation for proxychecker.
+# Copyright (C) 2014 Jan Helbling <jan.helbling@gmail.com>
+# This file is distributed under the same license as the PACKAGE package
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-05 02:19+0200\n"
+"PO-Revision-Date: 2014-01-11 02:14+0000\n"
+"Last-Translator: Jan Helbling <jan.helbling@gmail.com>\n"
+"Language-Team:\n"
+"Language: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: UTF-8\n"
+
+#: ../ProxyChecker/proxychecker.py:36 ../bin/proxychecker.py:35
+msgid " [ERROR] fork could not be imported from os, this programm is not for Windows-Users!!\n"
+msgstr " [FEHLER] fork kann von os nicht importiert werden, dieses Programm ist nichts für Windows-Benutzer!!\n"
+
+#: ../ProxyChecker/proxychecker.py:37 ../bin/proxychecker.py:36
+msgid "        (Windows has no syscall named fork()...\n"
+msgstr "        (Windows hatt keinen Syscall namens fork()...\n"
+
+#: ../ProxyChecker/proxychecker.py:38 ../bin/proxychecker.py:37
+msgid "        You must Upgrade to Linux to use this ;)\n"
+msgstr "        Du must auf Linux upgraden um dies zu benutzen ;)\n"
+
+#: ../ProxyChecker/proxychecker.py:66
+#, python-brace-format
+msgid "{0}[ERROR] --header should exactly contains one \":\" !!!{1}"
+msgstr "{0}[FEHLER] --header muss genau ein \":\" enthalten!!!{1}"
+
+#: ../ProxyChecker/proxychecker.py:97
+#, python-brace-format
+msgid "{0}[INFO] Remove invalid lines from list..."
+msgstr "{0}[INFO] Entferne unnütze Linien von der Liste..."
+
+#: ../ProxyChecker/proxychecker.py:99
+#, python-brace-format
+msgid "{0}..[DONE, {1} lines removed]{2}"
+msgstr "{0}...[FERTIG, {1} Linien entfernt]{2}"
+
+#: ../ProxyChecker/proxychecker.py:102
+#, python-brace-format
+msgid "{0}[TOTAL: {1} Proxys]{2}"
+msgstr "{0}[TOTAL: {1} Proxys]{2}"
+
+#: ../ProxyChecker/proxychecker.py:105
+#, python-brace-format
+msgid "{0} [ERROR] no proxys found...{1}\n"
+msgstr "{0} [FEHLER] Keine Proxys gefunden...{1}\n"
+
+#: ../ProxyChecker/proxychecker.py:108
+#, python-brace-format
+msgid "{0} [Remove outputfile]..."
+msgstr "{0} [Entferne Ausgabedatei]..."
+
+#: ../ProxyChecker/proxychecker.py:111
+#, python-brace-format
+msgid "...{0}[DONE]{1}\n"
+msgstr "...{0}[FERTIG]{1}\n"
+
+#: ../ProxyChecker/proxychecker.py:113
+#, python-brace-format
+msgid "...{0}[FAIL]{1}\n"
+msgstr "...{0}[FEHLGESCHLAGEN]{1}\n"
+
+#: ../ProxyChecker/proxychecker.py:114
+#, python-brace-format
+msgid "{0} [ERROR] While removing {1}: {2}{3}\n"
+msgstr "{0} [FEHLER] Während dem entfernen von {1}: {2}{3}\n"
+
+#: ../ProxyChecker/proxychecker.py:117
+#, python-brace-format
+msgid "{0}[INFO] ({1}working{0})=(current/total){2}"
+msgstr "{0}[INFO] ({1}funktionieren{0})=(aktueller/gesamt){2}"
+
+#: ../ProxyChecker/proxychecker.py:133
+#, python-brace-format
+msgid "{0}[INFO] gather proxys from url..."
+msgstr "{0}[INFO] Grabbe Proxys von url..."
+
+#: ../ProxyChecker/proxychecker.py:145
+#, python-brace-format
+msgid "...{0}[DONE, {1} proxys found]{2}"
+msgstr "...{0}[FERTIG, {1} Proxys gefunden]{2}"
+
+#: ../ProxyChecker/proxychecker.py:158
+#, python-brace-format
+msgid "...{0}[FAIL]{1}"
+msgstr "...{0}[FEHLGESCHLAGEN]{1}"
+
+#: ../ProxyChecker/proxychecker.py:160
+#, python-brace-format
+msgid "{0} [ERROR] couldn't open {1}: {2}{3}\n"
+msgstr "{0} [FEHLER] Kann {1} nicht öffnen: {2}{3}\n"
+
+#: ../ProxyChecker/proxychecker.py:162
+#, python-brace-format
+msgid "{0} [ERROR] couldn't open {1}:  {2}{3}\n"
+msgstr "{0} [FEHLER] Kann {1} nicht öffnen: {2}{3}\n"
+
+#: ../ProxyChecker/proxychecker.py:166
+#, python-brace-format
+msgid "{0} [ERROR] {1}"
+msgstr "{0} [FEHLER] {1}"
+
+#: ../ProxyChecker/proxychecker.py:168
+#, python-brace-format
+msgid "{0} [ERROR] {1}: {2}\n"
+msgstr "{0} [FEHLER] {1}: {2}\n"
+
+#: ../ProxyChecker/proxychecker.py:192
+#, python-brace-format
+msgid "{0}[INFO] Compressing {1} in {2} => "
+msgstr "{0}[INFO] Komprimiere {1} zu {2} => "
+
+#: ../ProxyChecker/proxychecker.py:200
+#, python-brace-format
+msgid "{0}[DONE]{1}"
+msgstr "{0}[FERTIG]{1}"
+
+#: ../ProxyChecker/proxychecker.py:203
+#, python-brace-format
+msgid "{0}[FAIL]{1}"
+msgstr "{0}[FEHLGESCHLAGEN]{1}"
+
+#: ../ProxyChecker/proxychecker.py:204
+#, python-brace-format
+msgid "{0} [ERROR] with file {1}: {2}{3}\n"
+msgstr "{0} [FEHLER] mit Datei {1}: {2}{3}\n"
+
+#. Check if the string contains is in content, if true
+#: ../ProxyChecker/proxychecker.py:231
+#, python-brace-format
+msgid "{0}[OK]  \t=>{1}({0}{2}{1})=({3}/{4})          {0}{5}\t-->{6}sec.{7}"
+msgstr "{0}[OK]  \t=>{1}({0}{2}{1})=({3}/{4})          {0}{5}\t-->{6}sek.{7}"
+
+#: ../ProxyChecker/proxychecker.py:236
+#, python-brace-format
+msgid ""
+"{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->Doesnt contain the "
+"String: {7}{8}"
+msgstr ""
+"{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->String nicht "
+"enthalten: {7}{8}"
+
+#: ../ProxyChecker/proxychecker.py:238
+#, python-brace-format
+msgid ""
+"{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->Doesnt contain the "
+"String!{7}"
+msgstr ""
+"{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->String nicht "
+"enthalten!{7}"
+
+#: ../ProxyChecker/proxychecker.py:241 ../ProxyChecker/proxychecker.py:245
+#: ../ProxyChecker/proxychecker.py:250 ../ProxyChecker/proxychecker.py:252
+#: ../ProxyChecker/proxychecker.py:254 ../ProxyChecker/proxychecker.py:259
+#: ../ProxyChecker/proxychecker.py:261 ../ProxyChecker/proxychecker.py:263
+#, python-brace-format
+msgid "{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->{7}{8}"
+msgstr "{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->{7}{8}"
+
+#: ../ProxyChecker/proxychecker.py:248 ../ProxyChecker/proxychecker.py:256
+#, python-brace-format
+msgid "{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->Timed Out{7}"
+msgstr "{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->Zeitüberschreitung{7}"
+
+#: ../ProxyChecker/proxychecker.py:265
+#, python-brace-format
+msgid "{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->BadStatusLine{7}"
+msgstr "{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->Schlechte Status Linie{7}"
+
+#: ../ProxyChecker/proxychecker.py:267
+#, python-brace-format
+msgid "{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->IncompleteRead{7}"
+msgstr "{0}[FAIL]\t=>{1}({2}{3}{1})=({4}/{5})          {0}{6}\t-->Nicht komplett gelesen{7}"
+
+#. [CTRL] + [C]
+#: ../ProxyChecker/proxychecker.py:269
+#, python-brace-format
+msgid "{0}[ABORTED CTRL+C]     =>{1}({2}{3}{1})=({4}/{5}) {0}{6}\t-->Interrupted by User{7}"
+msgstr "{0}[ABGEBROCHEN CTRL+C] =>{1}({2}{3}{1})=({4}/{5}) {0}{6}\t-->Unterbrochen vom Benutzer{7}"
+
+#: ../ProxyChecker/proxychecker.py:305
+#, python-brace-format
+msgid "{0}[!!!EPIC FAIL!!!] None of {1} proxys we have checked are working...{2}"
+msgstr "{0}[!!!EPISCHER FEHLSCHLAG!!!] Keiner von den {1} geprüften Proxys funktionieren...{2}"
+
+#: ../ProxyChecker/proxychecker.py:308
+msgid "{0}removing the output-file...{1}"
+msgstr "{0}Entferne Ausgabedatei...{2}"
+
+#: ../ProxyChecker/proxychecker.py:311
+#, python-brace-format
+msgid "{0}...{1}[OK]{2}"
+msgstr "{0}...{1}[OK]{2}"
+
+#: ../ProxyChecker/proxychecker.py:313
+#, python-brace-format
+msgid "{0}...[FAIL]{1}"
+msgstr "{0}...[FAIL]{1}"
+
+#: ../ProxyChecker/proxychecker.py:314
+#, python-brace-format
+msgid " [ERROR] Couldn't remove {0}: {1}\n"
+msgstr " [FEHLER] Kann Datei {0} nicht entfernen: {1}\n"
+
+#: ../ProxyChecker/proxychecker.py:317
+#, python-brace-format
+msgid "{0}[!!!DONE!!!] {1} of {2} proxys we have checked are working!{3}"
+msgstr "{0}[!!!FERTIG!!!] {1} von {2} Proxys die wir geprüft haben funktionieren!{3}"
+
+#: ../ProxyChecker/proxychecker.py:318
+#, python-brace-format
+msgid "{0}[New Proxylist saved to => {1}]{2}"
+msgstr "{0}[Neue Proxylist gespeichert unter =>{1}]{2}"
+
+#: ../ProxyChecker/proxychecker.py:320
+#, python-brace-format
+msgid "{0}[Sort&Filter]:~${1} sort -us {2} -o 000{2}{3}...{4}"
+msgstr "{0}[Sort&Filter]:~${1} sort -us {2} -i 000{2}{3}...{4}"
+
+#: ../ProxyChecker/proxychecker.py:327
+msgid "{0}...{1}[!SUCCESS!]{2}"
+msgstr "{0}...{1}[!OK!]{2}"
+
+#: ../ProxyChecker/proxychecker.py:329
+msgid "{0}...{1}[!EPICFAIL!]{2}"
+msgstr "{0}...{1}[!EPICFAIL!]{2}"
+
+#: ../ProxyChecker/proxychecker.py:330
+#, python-brace-format
+msgid "{0}[RENAME 000{1} to {1}...{2}"
+msgstr "{0}[UMBENENNEN von 000{1} in {1}...{2}"
+
+#: ../ProxyChecker/proxychecker.py:334
+msgid "{0}...ERROR!!!] Could not rename 000{1} in {1}: {2}!{3}"
+msgstr "{0}...FEHLER!!!] Kann 000{1} nicht in {1} unbenennen: {2}!{3}"
+
+#: ../ProxyChecker/proxychecker.py:336
+msgid "{0}...DONE!]{1}"
+msgstr "{0}...FERTIG!]{1}"
+
+#: ../bin/proxychecker.py:49
+msgid ">>> \"from ProxyChecker.proxychecker import proxychecker\" failed, try to search the module..."
+msgstr ">>> \"from ProxyChecker.proxychecker import proxychecker\" Fehlgeschlagen, versuche Modul zu suchen..."
+
+#: ../bin/proxychecker.py:50
+msgid "shell > find / 2>/dev/null | grep -E \"(|site\\-packages|dist\\-packages)/ProxyChecker/proxychecker.py\"..."
+msgstr "shell > find / 2>/dev/null | grep -E \"(|site\\-packages|dist\\-packages)/ProxyChecker/proxychecker.py\"..."
+
+#: ../bin/proxychecker.py:56
+#, python-brace-format
+msgid "...[FOUND] in {0}"
+msgstr "...[GEFUNDEN] in {0}"
+
+#: ../bin/proxychecker.py:65
+#, python-brace-format
+msgid ""
+"Add path to PYTHONPATH in ~/{0}? (to prevent searching the modulepath "
+"anytimes) (y/n)"
+msgstr ""
+"Pfad zu PYTHONPATH in ~/{0} hinzufügen? (Damit nicht jedesmal gesucht werden "
+"muss ) (j/n)"
+
+#: ../bin/proxychecker.py:67
+msgid "[EDITING {0}/{1}]..."
+msgstr "[EDITIERE {0}/{1}]..."
+
+#: ../bin/proxychecker.py:74
+msgid "...[DONE]"
+msgstr "...[FERTIG]"
+
+#: ../bin/proxychecker.py:77
+msgid "...[NOTHING FOUND]"
+msgstr "...[NICHTS GEFUNDEN]"
+
+#: ../bin/proxychecker.py:83
+#, python-brace-format
+msgid "Could not import \"from ProxyChecker.proxychecker import proxychecker\": {0}."
+msgstr "Kann \"from ProxyChecker.proxychecker import proxychecker\" nicht importieren: {0}."
+
+#: ../bin/proxychecker.py:88
+msgid "Invalid number of arguments! Use -h for options."
+msgstr "Falsche Anzahl von Argumenten! Benutze -h für Optionen."
+
+#. Parse options and run the proxychecker
+#: ../bin/proxychecker.py:91
+msgid "usage: %prog -i <proxylist[.gz]|URL> [options...]"
+msgstr "usage: %prog -i <proxylist[.gz]|URL> [Optionen...]"
+
+#: ../bin/proxychecker.py:91
+msgid "Version: 1.5\nContact & (C): 2014 by Jan Helbling <jan.helbling@gmail.com> [GNU/GPLv3+]"
+msgstr "Version: 1.5\nKontakt & (C): 2014 by Jan Helbling <jan.helbling@gmail.com> [GNU/GPLv3+]"
+
+#: ../bin/proxychecker.py:92
+msgid "read proxys from file (or from stdin), gz format supported"
+msgstr "Lese Proxys aus Datei (oder von stdin), gz-Format unterstützt"
+
+#: ../bin/proxychecker.py:93
+msgid "write proxys to file (or to a stream), default: checked_proxys"
+msgstr "Schreibe Proxys in Datei (oder in ein Stream), Standart: checked_proxys"
+
+#: ../bin/proxychecker.py:94
+msgid "use this site for requests, default: http://www.gnu.org"
+msgstr "Benutze diese Seite für Requests, Standart: http://www.gnu.org"
+
+#: ../bin/proxychecker.py:95
+msgid "good hit must contains ..., default: GNU"
+msgstr "Ein guter Treffer muss beinhalten ..., Standart: GNU"
+
+#: ../bin/proxychecker.py:96
+msgid "timeout, default: 5.0"
+msgstr "Timeout, Standart: 5.0"
+
+#: ../bin/proxychecker.py:97
+msgid "number of processes, default: 10"
+msgstr "Anzahl der Prozesse, Standart: 10"
+
+#: ../bin/proxychecker.py:98
+msgid "use this site as referer, default: None"
+msgstr "Benutze diese Seite als Referer, Standart: Keine"
+
+#: ../bin/proxychecker.py:99
+msgid "mobile,desktop or all, default: desktop"
+msgstr "mobile,desktop oder all, Standart: desktop"
+
+#: ../bin/proxychecker.py:100
+msgid "data for post-requests, (eg. \"foo=bar&info=false\"), default: None"
+msgstr "Daten für POST-Requests, (z.B. \"foo=bar&info=false\"), Standart: Keine"
+
+#: ../bin/proxychecker.py:101
+msgid "cookies, separated by ; (eg. \"abc=123; def=456;\"), default: None"
+msgstr "Kekse, getrennt mit ; (z.B. \"abc=123; def=456;\"), Standart: Keine"
+
+#: ../bin/proxychecker.py:102
+msgid "add a header, splitted by : (eg. \"Range:bytes=500-999\"), default: None"
+msgstr "Füge einen Header hinzu, gesplitted mit : (z.B. \"Range:bytes=500-999\"), Standart: Keiner"
+
+#: ../bin/proxychecker.py:103
+msgid "colored output, none or yes, default: yes"
+msgstr "Farbige Ausgabe, none oder yes, Standart: yes"
+
+#: ../bin/proxychecker.py:104
+msgid "Run the SHELL-Command \"sort -us\" bevore exit to erase dupplicates and sort by alphabet"
+msgstr "Führe das SHELL-Kommando \"sort -us\" aus vor dem beenden, um Dupplikanten zu entfernen und die liste Alphabetisch zu ordnen"

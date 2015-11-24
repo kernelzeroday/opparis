@@ -1,0 +1,8 @@
+build/**/*
+**/checked_proxy*
+po/proxychecker.pot
+**/__pycache__/**
+data/PKGBUILD-*/src/**/*
+data/PKGBUILD-*/pkg/**/*
+data/PKGBUILD-*/*.xz
+data/PKGBUILD-*/*.gz

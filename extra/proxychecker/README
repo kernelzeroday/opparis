@@ -1,0 +1,129 @@
+ProxyChecker
+============
+
+    Copyright (C) 2014 by Jan Helbling <jan.helbling@gmail.com>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+A advanced Proxychecker (and Hitfaker), written in Python
+
+It checks the http-proxylist in format ip:port:
+
+80.91.190.188:8181
+185.12.15.123:80
+5.9.212.53:5059
+195.225.144.38:3128
+
+Fetaures:
+	- Multithreaded ( with fork)
+	- Check site and good hit must contain string
+	- Set timeout
+	- Set number of Processes
+	- Choose between Mobile/Desktop UserAgent
+	- Add a HTTP_REFERER
+	- Send POST-Requests
+	- Send Cookies
+        - Add a HTTP-Header
+	- Colored Output
+	- gzip support
+	- Open website to regex for proxys
+	- Sort a Proxylist alphabetic & remove duplicates
+
+For Test bevore Install:
+
+jhelbling@ubuntu-home:~$ cd proxychecker
+jhelbling@ubuntu-home:~/proxychecker$ ./setup.py test
+ProxyChecker.proxychecker
+ProxyChecker.color
+ProxyChecker.useragent
+ProxyChecker.regex
+running test
+./bin/proxychecker.py -i data/proxys.lst -o /dev/null -p 15 -t 2
+[INFO] Remove invalid lines from list.....[DONE, 5 lines removed]
+[TOTAL: 32 Proxys]
+[INFO] (working)=(current/total)
+[FAIL]	=>(0)=(5/32)          106.187.103.77:3128	-->Connection refused
+[FAIL]	=>(0)=(8/32)          107.6.112.242:3128	-->Connection refused
+[FAIL]	=>(0)=(9/32)          103.25.6.121:3128	        -->No route to host
+[FAIL]	=>(0)=(16/32)          111.1.36.24:80	        -->Not Found
+[FAIL]	=>(0)=(15/32)          111.1.36.24:84	        -->Not Found
+[FAIL]	=>(0)=(14/32)          111.1.36.24:82	        -->Not Found
+[FAIL]	=>(0)=(1/32)          107.22.252.103:80	        -->Timed Out
+[FAIL]	=>(0)=(6/32)          106.37.177.251:3128	-->Timed Out
+[FAIL]	=>(0)=(10/32)          103.25.6.120:3128	-->Timed Out
+[FAIL]	=>(0)=(2/32)          109.185.116.199:8080	-->Timed Out
+[FAIL]	=>(0)=(13/32)          111.92.180.3:3128	-->Timed Out
+[FAIL]	=>(0)=(12/32)          106.3.241.41:80	        -->Timed Out
+[FAIL]	=>(0)=(4/32)          109.185.116.199:8080	-->Timed Out
+[FAIL]	=>(0)=(3/32)          109.202.19.26:8080	-->Timed Out
+[OK]  	=>(1)=(11/32)          111.161.126.87:8080	-->2.498sec.
+[OK]  	=>(1)=(7/32)          110.173.49.18:3128	-->7.872sec.
+[FAIL]	=>(2)=(21/32)          103.4.175.82:3128	-->Connection refused
+[FAIL]	=>(2)=(27/32)          112.78.137.67:8080	-->Connection refused
+[FAIL]	=>(2)=(20/32)          111.13.46.99:3128	-->Connection reset by peer
+[FAIL]	=>(2)=(17/32)          111.1.36.24:81	        -->Not Found
+[FAIL]	=>(2)=(19/32)          111.1.36.24:83	        -->Not Found
+[FAIL]	=>(2)=(23/32)          101.66.251.72:8080	-->Gateway Time-out
+[FAIL]	=>(2)=(26/32)          110.172.152.246:8080	-->Timed Out
+[FAIL]	=>(2)=(28/32)          110.77.136.102:3128	-->Timed Out
+[FAIL]	=>(2)=(32/32)          114.130.54.102:3128	-->Timed Out
+[FAIL]	=>(2)=(25/32)          112.175.245.251:3128	-->Timed Out
+[FAIL]	=>(2)=(30/32)          110.77.136.102:3128	-->Timed Out
+[OK]  	=>(3)=(29/32)          111.161.126.93:8080	-->2.334sec.
+[FAIL]	=>(2)=(31/32)          103.8.221.253:8080	-->Timed Out
+[OK]  	=>(3)=(22/32)          111.161.126.88:8080	-->2.521sec.
+[FAIL]	=>(2)=(24/32)          112.90.146.76:3128	-->Timed Out
+[OK]  	=>(3)=(18/32)          111.206.81.248:80	-->2.59sec.
+[!!!DONE!!!] 5 of 32 proxys we have checked are working!
+[New Proxylist saved to => /dev/null]
+jhelbling@ubuntu-home:~/Programming/proxychecker$
+
+
+Usage: proxychecker.py -i <proxylist[.gz]|URL> [options...]
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -i FILE, --input=FILE
+                        read proxys from file (or from stdin), gz format
+                        supported
+  -o FILE, --output=FILE
+                        write proxys to file (or to a stream), default:
+                        checked_proxys
+  -u WEBSITE, --testsite=WEBSITE
+                        use this site for requests, default http://www.gnu.org
+  -c STRING, --contains=STRING
+                        good hit must contains, default GNU
+  -t TIMEOUT, --timeout=TIMEOUT
+                        timeout, default 5.0
+  -p NUM, --process=NUM
+                        number of processes, default 10
+  -r REFERER, --referer=REFERER
+                        use this site as referer, default None
+  -b TYPE, --browser-string=TYPE
+                        mobile,desktop or all, default desktop
+  -P DATA, --post-data=DATA
+                        data for postrequests, (eg. "foo=bar&info=false"),
+                        default None
+  -C COOKIE, --cookie=COOKIE
+                        cookies, seperated by ; (eg. "abc=123; def=456;"),
+                        default None
+  -H HEADER, --header=HEADER
+                        add a header, splitted by : (eg.
+                        "Range:bytes
+                       =500-999")default: None
+  -e COLOR, --color=COLOR
+                        colored output, none or yes, default yes
+  -s SORT,  --sort=SORT  Run the SHELL-Command "sort -us" bevore exit to erase
+                        dupplicates and sort by alphabet
