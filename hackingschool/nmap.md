@@ -108,6 +108,10 @@ Maybe you just want to look for stuff across the entire internet.
 
 `nmap -p 80 -vv -A -n -Pn -iR 0`
 
+Let's add in the power of the nmap scripting engine to grab and display banners on the ports we are scanning!
+
+nmap -p 80 --script=banner -vv -A -n -Pn -iR 0``
+
 Happy scanning! 
 
 - kernel zero day
