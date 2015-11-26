@@ -1,3 +1,9 @@
+// Search for a user's tweets and display geolocation data
+
+// Useage: node script.js screen_name
+
+// DEPS: npm install twitter
+
 var Twitter = require('twitter');
 //https://apps.twitter.com/app/new for your api keys 
 var client = new Twitter({
@@ -15,10 +21,5 @@ client.get('statuses/user_timeline', {screen_name: process.argv[2]}, function(er
         console.log();
 //      client.say('tweet id:',tweet.id, 'user id:', tweet.user.id, 'tweet: ', tweet.text);
   });
-
-  stream.on('error', function(error) {
-    console.log(error);
-  });
-});
 
 
