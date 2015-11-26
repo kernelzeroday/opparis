@@ -1,0 +1,48 @@
+                                                                           
+      ******       095cOd   *********        95cOd           ***       Od095cO    
+    **********   5cOd095c   **********      cOd095c        ******      95cOd09    
+   ***   ******  Od09  Od09 ***********     095cOd09      *********    cOd         
+  ***     ****  95c    5cO  ****    ****    5cO  95cO     ***   ****   095         
+  ***          cOd0    d095 ****    ****    d09   d09     ***   ****   cOd095cO    
+  **           095c    5cOd ****     ****   5c    5cO     **********   095cOd095   
+  **            Od0    d09  ****     ****   d0    d09      *********         cOd   
+  **       **   95c    5cO  ****    *****   5 O  95cO           ****         095   
+  ***     ***   Od09  Od09  ************    095cOd09      **    ****   cOd  5cOd   
+   **********    5cOd095c   ***********      cOd095c      **********    095cOd09    
+    *******       095cOd    **********        95cO          *****        d0cOd     
+                                                                         
+SQL INJECTION TUTORIAL USING HAVIJ !!
+
+-----------
+Instructions
+------------
+
+1- These tutorial is only for windows users download the tool havij at "http://bit.ly/1PQ64ad" , for linux users look at sql injection tutorial using sqlmap made by Matrix at http://pastehtml.com/view/blmctzx0w.rtxt 
+
+2-First you need to find the vulnerable site you will inject.
+
+3-There are three ways for doing it :
+
+I-Using a scanner like Nexpose, arachni, burbsuite, vega and they are in kali linux already or you can search online in "www.bing.com" by writing the ip of the site like that with the dork
+(ip:000.000.000.000 ".php=id?") or using https://www.acunetix.com/.
+
+II-Manually by adding simple charachters to the vuln. url, You will search for any page with form like "index.php?id=23" or any number or "home.php"  by adding "'" to the number or "/" it will show an sql error like "
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'' at line 1" , the "home.php" can be anything.php and "id=" can be anything=.
+
+III-Using a google dork to search it like "inurl:index.php?id=" and you can search for sql dorks on google.
+
+##Now lets begin the fun## !
+
+step1 : Find SQL injection Vulnerability in your site and insert the string "'" after it (like http://www.target.com/index.asp?id=123') then insert it in Havij Target (textbox).
+
+step2 : Now click on the Analyze button, now if the your Server is Vulnerable the information about the target will appear and the columns will appear in the listbox below.
+
+Step3: Now click on the Tables button and then click Get Tables button.
+
+Step4: Now select the Tables with sensitive information and click Get Columns button.After that select the Username and Password Column to get the Username and Password and click on the Get Table button.
+
+*IF you didn't find a target : try on this www.q8movies.com
+
+*and the vuln. url to add to havij : http://www.q8movies.com/index.php?wish=18931'
+
+Now you have the database of users you can do whatever you want with them like getting their personal information of even getting the admin of the site and uploading a shell to it.
