@@ -4,57 +4,212 @@ var program = require('commander');
 var Twit = require('twit');
 var pluralize = require('pluralize');
 var chalk = require('chalk');
+var _ = require('lodash');
 
 var statuses = require('./config/statuses.json'),
-	hashtags = require('./config/hashtags.json'),
+	queries = require('./config/queries.json'),
 	auth = require('./config/auth.json');
 
 program
-	.version('0.0.1')
-	.option('-r --reply', 'Reply to found tweets with a random status [Default: false]')
-	.option('-c --count', 'Number of tweets to search for [Default: 10]')
+	.version('0.1.0')
+	.option('-c, --count <n>', 'specify the number of tweets to return [default: 25]', parseInt)
+	.option('-q, --query [query]', 'search for tweets using a custom query')
+	.option('-l, --language [language]', 'only search for tweets in a certain language (ISO 639-1)')
+	.option('-H, --hashtags', 'output a list of hashtags from the search results')
+	.option('-@, --usernames', 'output a list of usernames from the search results')
+	.option('-U, --urls', 'output a list of url`s from the search results')
+	.option('-r, --reply', 'tweet a reply to each search result')
+	.option('-s, --status [status]', 'use a custom status when replying with the -r flag')
 	.parse(process.argv);
 
-if(hashtags.tagNames.length > 0) {
-	console.log(chalk.green('Searching for ' + hashtags.tagNames.length + ' ' + pluralize('hashtag', hashtags.tagNames.length)));
-}
-else {
-	console.warn(chalk.red('Please include at least 1 hashtag in config/hashtags.json'));
+/*
+	To Do:
+		1. Include probability of relation of hashtags/usernames/URL's to original query **
+		2. Include option to find recursive hashtags/usernames/URL's *
+		3. Geo-targeting features *
+		4. Search for Tweets in within specific date-range **
+		5. Streaming API ***
+*/
+
+// Report actions and possible errors
+console.log(chalk.bold.red('\n@@@@@@@  @@@@@@  @@@@@@@  @@@@@@  @@@@@@@  @@@@@@@@\n  @!!   !@@     !@@      @@!  @@@ @@!  @@@ @@!\n  @!!    !@@!!  !@!      @!@  !@! @!@@!@!  @!!!:!\n  !!:       !:! :!!      !!:  !!! !!:      !!:\n  :    ::.: :   :: :: :  : :. :   :       : :: ::\n '));
+console.log('created by advent | https://github.com/adv3nt/tscope | irc.anonops.com #opparis-dev\n');
+
+if(typeof(program.query) == 'string') {
+	console.log(chalk.green('Searching for custom query: ' + program.query));
+} else {
+	if(queries.querystrings.length <= 0) {
+		console.warn(chalk.red('Please include at least 1 search query in config/queries.json, or specify one with the -q flag.'));
+	}
 }
 
 if(program.reply) {
-	if(statuses.tweets.length > 0) {
-		console.log(chalk.green('Replying with ' + statuses.tweets.length + ' possible ' + pluralize('status', statuses.tweets.length)));
-	}
-	else {
-		console.warn(chalk.red('Please include at least 1 status in config/statuses.json'));
+	if(program.status) console.log(chalk.green('Replying with custom status:' + program.status));
+
+	if(!program.status && statuses.replies.length) {
+		console.log(chalk.green('Replying with ' + statuses.replies.length + ' possible ' + pluralize('status', statuses.replies.length)));
+	} else {
+		console.warn(chalk.red('Please include at least 1 status in config/statuses.json or specify one with the -s flag.'));
 	}
 }
 
-if(!program.count || program.count < 0) {
-	program.count = 10;
+// Set default options
+if(!program.count || program.count < 0) program.count = 25;
+if(typeof(program.language) !== 'string') program.language = false;
+
+// Build search query from config/queries.json
+if(!program.query || program.query === true) {
+	program.query = _(queries.querystrings).toString();
+	program.query = program.query.replace(/,/g, ' OR ');
 }
 
+if(queries.compulsory.length > 0) {
+	program.query = program.query + ' AND ' + _(queries.compulsory).toString();
+	program.query = program.query.replace(/,/g, ' AND ');
+}
+
+if(queries.exclude.length > 0) {
+	program.query = program.query + ' -' + _(queries.exclude).toString();
+	program.query = program.query.replace(/,/g, ' -');
+}
+
+if(queries.mustContainURL) {
+	program.query = program.query + ' filter:links';
+}
+
+console.log(program.query);
+
+// Report program.count
+console.log(chalk.green('Fetching a maximum of ' + program.count + ' ' + pluralize('tweet', program.count) + '... (change this with the -c flag)\n'));
+
+// Twitter stuff
 var T = new Twit(auth);
 
-var searchTweets = function (q, count) {
-	T.get('search/tweets', {
-		q: q,
-		count: count
+function replyToTweet(status, replyTo, callback) {
+	T.post('statuses/update', {
+		status: status,
+		in_reply_to_status_id: replyTo
 	}, function(err, data, response) {
-		if(!err) {
-			var tweets = data.stasuses;
+		if(callback) callback(err, data, response);
+	});
+}
 
-			if(program.reply) {
-				console.log('WIP: Post a random reply from statuses.tweets to userID of this tweet');
-			}
-		}
-		else {
+var seperator = chalk.gray.dim('\n===================\n');
+
+function searchTweets(query, count, language) {
+	console.log('Query: ' + chalk.bgBlack.white(' ' + query + ' '));
+
+	T.get('search/tweets', {
+		q: query,
+		count: count,
+		lang: program.language || ''
+	}, function(err, data, response) {
+		if(err) {
+			// Todo: Proper error messages
+			console.log('');
 			console.error(err);
-			console.log(chalk.yellow("Make sure you've added the right keys in `config/auth.json`. View `README.md` for more help."))
+
+			if(err.code == 25) console.log(chalk.yellow("\nYour search query is missing. Specify one with the -q flag, or edit config/queries.json")) ;
+			if(err.code == 89) console.log(chalk.yellow("\nMake sure you've added valid keys in config/auth.json."));
+
+			console.log(chalk.yellow("\nView README.md for help.\n"))
+		} else {
+			var foundTweets = data.statuses;
+			foundTweets.map(function(tweet) {
+				console.log(seperator);
+				console.log(chalk.gray(tweet.id_str + ' · ' + tweet.created_at));
+				console.log(chalk.blue('@' + tweet.user.screen_name + ' · ' + tweet.user.name));
+				console.log(tweet.text);
+
+				if(program.reply) {
+					var reply;
+					(program.status) ? reply = program.status : reply = statuses.replies[Math.floor(Math.random() * statuses.replies.length)];
+					reply = '@' + tweet.user.screen_name + ' ' + reply;
+
+					replyToTweet(reply, tweet.id_str, function() {
+						if(!err) {
+							console.log(chalk.green('Replied to ' + tweet.id_str + ' with: ') + reply);
+						} else {
+							console.warn(err);
+						}
+					});
+				}
+			});
+
+			console.log(seperator);
+
+			if(program.hashtags || program.urls) {
+				var relatedTweets = [];
+
+				var foundTweetIDs = [];
+				foundTweets.map(function(tweet) {
+					foundTweetIDs.push(tweet.id_str);
+				});
+			}
+
+			if(program.hashtags) {
+				var resultHashtags = [];
+				foundTweets.forEach(function(tweet) {
+					tweet.entities.hashtags.forEach(function(hashtag) {
+						resultHashtags.push(hashtag.text);
+					});
+				});
+
+				if(resultHashtags.length > 0) {
+					console.log(chalk.green('Hashtags from results: '));
+					_.uniq(resultHashtags).forEach(function(hashtag) {
+						console.log('#' + hashtag);
+					});
+					console.log(seperator);
+				} else {
+					chalk.red('No hashtags found.');
+				}
+			}
+
+			if(program.usernames) {
+				var resultUsernames = [];
+				foundTweets.forEach(function(tweet) {
+					resultUsernames.push('@' + tweet.user.screen_name);
+					tweet.entities.user_mentions.forEach(function(user) {
+						resultUsernames.push('@' + user.screen_name);
+					});
+				});
+
+				if(resultUsernames.length > 0) {
+					console.log(chalk.green('Usernames from results: '));
+					_.uniq(resultUsernames).forEach(function(username) {
+						console.log(username);
+					});
+					console.log(seperator);
+				} else {
+					chalk.red('No usernames found.');
+				}
+			}
+
+			if(program.urls) {
+				var resultUrls = [];
+				foundTweets.forEach(function(tweet) {
+					tweet.entities.urls.forEach(function(url) {
+						resultUrls.push(url.expanded_url);
+					});
+				});
+
+				if(resultUrls.length > 0) {
+					console.log(chalk.green('URL`s from results: '));
+					_.uniq(resultUrls).forEach(function(url) {
+						console.log(url);
+					});
+					console.log(seperator);
+				} else {
+					chalk.red('No URL`s found.');
+				}
+			}
 		}
 	});
 }
 
-var hashtagQuery = "#" + hashtags.tagNames.toString().replace(',', '&#');
-return searchTweets(hashtagQuery, program.count);
+if(program.stream) {
+	return startStream();
+} else {
+	return searchTweets(program.query, program.count, program.language);
+}
