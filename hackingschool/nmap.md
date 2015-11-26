@@ -10,16 +10,22 @@ It comes in a few different flavors for many different operating systems. Assumi
 
 will return something like this:
 
-`
-[kod@19b53ae5-14f9-c774-e344-e89c7712675c ~]$ nmap localhost
-Starting Nmap 6.47 ( http://nmap.org ) at 2015-11-26 09:16 UTC
-Nmap scan report for localhost (127.0.0.1)
-Host is up (0.00014s latency).
-Not shown: 999 closed ports
-PORT   STATE SERVICE
-22/tcp open  ssh
-Nmap done: 1 IP address (1 host up) scanned in 27.79 seconds
-`
+`[kod@19b53ae5-14f9-c774-e344-e89c7712675c ~]$ nmap localhost`
+
+`Starting Nmap 6.47 ( http://nmap.org ) at 2015-11-26 09:16 UTC`
+
+`Nmap scan report for localhost (127.0.0.1)`
+
+`Host is up (0.00014s latency).`
+
+`Not shown: 999 closed ports`
+
+`PORT   STATE SERVICE`
+
+`22/tcp open  ssh`
+
+`Nmap done: 1 IP address (1 host up) scanned in 27.79 seconds`
+
 
 It will take a while depending on what you have running and the speed of your machine.
 
@@ -35,17 +41,23 @@ Next we get the service. `22/tcp open  ssh` means that a tcp socket was found on
 
 and we get
 
-`
-[kod@19b53ae5-14f9-c774-e344-e89c7712675c ~]$ nmap localhost -A
-Starting Nmap 6.47 ( http://nmap.org ) at 2015-11-26 09:21 UTC
-Nmap scan report for localhost (127.0.0.1)
-Host is up (0.000087s latency).
-Not shown: 999 closed ports
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 7.1 (protocol 2.0)
-Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 27.89 seconds
-`
+`[kod@19b53ae5-14f9-c774-e344-e89c7712675c ~]$ nmap localhost -A`
+
+`Starting Nmap 6.47 ( http://nmap.org ) at 2015-11-26 09:21 UTC`
+
+`Nmap scan report for localhost (127.0.0.1)`
+
+`Host is up (0.000087s latency).`
+
+`Not shown: 999 closed ports`
+
+`PORT   STATE SERVICE VERSION`
+
+`22/tcp open  ssh     OpenSSH 7.1 (protocol 2.0)`
+
+`Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .`
+
+`Nmap done: 1 IP address (1 host up) scanned in 27.89 seconds`
 
 Note that we can now see the SSH server's application version!
 
@@ -53,12 +65,16 @@ Lets see what we can discover about the host OS. This requires root because it u
 
 `sudo nmap -O localhost`
 
-`Device type: general purpose
-Running: Linux 3.X
-OS CPE: cpe:/o:linux:linux_kernel:3
-OS details: Linux 3.7 - 3.15
-Network Distance: 0 hops
-`
+`Device type: general purpose`
+
+`Running: Linux 3.X`
+
+`OS CPE: cpe:/o:linux:linux_kernel:3`
+
+`OS details: Linux 3.7 - 3.15`
+
+`Network Distance: 0 hops`
+
 
 So we can tell what OS and the application protocol and version, this is very handy! But it is very slow!
 
