@@ -10,7 +10,8 @@ It comes in a few different flavors for many different operating systems. Assumi
 
 will return something like this:
 
-`[kod@19b53ae5-14f9-c774-e344-e89c7712675c ~]$ nmap localhost
+`
+[kod@19b53ae5-14f9-c774-e344-e89c7712675c ~]$ nmap localhost
 
 Starting Nmap 6.47 ( http://nmap.org ) at 2015-11-26 09:16 UTC
 Nmap scan report for localhost (127.0.0.1)
@@ -36,7 +37,8 @@ Next we get the service. `22/tcp open  ssh` means that a tcp socket was found on
 
 and we get
 
-`[kod@19b53ae5-14f9-c774-e344-e89c7712675c ~]$ nmap localhost -A
+`
+[kod@19b53ae5-14f9-c774-e344-e89c7712675c ~]$ nmap localhost -A
 
 Starting Nmap 6.47 ( http://nmap.org ) at 2015-11-26 09:21 UTC
 Nmap scan report for localhost (127.0.0.1)
