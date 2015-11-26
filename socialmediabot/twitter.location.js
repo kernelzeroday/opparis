@@ -17,7 +17,6 @@ client.get('statuses/user_timeline', {screen_name: process.argv[2]}, function(er
   stream.on('data', function(tweet) {
 //      if you want full json
 //      console.log(tweet.text);
-        console.log('tweet id:',tweet.id, 'user id:', tweet.user.id, 'tweet: ', tweet.text, tweet.geo, tweet.user.location, tweet.coordinates  );
+        console.log('tweet id:',tweet.id, 'user id:', tweet.user.id, 'tweet: ', tweet.text, 'geo: ', tweet.geo, 'user.location: ', tweet.user.location, 'coordinates: ', tweet.coordinates  );
         console.log();
-//      client.say('tweet id:',tweet.id, 'user id:', tweet.user.id, 'tweet: ', tweet.text);
   });
