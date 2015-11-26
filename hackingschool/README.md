@@ -5,25 +5,57 @@ Hello and welcome to the Script Kiddie Hacking School. In this school you will b
 At this stage we will be preparing the school with a beefy list of tutorials, with submission process as outlined above. A list of needed topics follows:
 
 nmap
+
 masscan
+
 ssl man in the middle
+
 ssh bruteforce
+
 xss
+
 sql injection
+
 binary fuzzing
+
 protocol denial of service
+
 sockstress
+
 slowloris
+
 distributed denial of service botnet clients
+
 priv escalation
+
 local network exploitation
+
 wireless exploitation
+
 wireless denial of service
+
 ncat
+
 socat
+
 sbd
+
 gpg/keybase.io
+
 hping3
+
 reverse shells
+
 armitage hail mary
+
 data exfiltration
+
+shell scripting
+
+online anonyminity
+
+operational security
+
+virtual machine manipulation
+
+container image manipulation
