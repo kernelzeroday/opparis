@@ -1,0 +1,73 @@
+For #opparis
+
+Internet service providers (ISPs)
+
+SYRIA:
+
+From IP 	To IP 	     Total IPs 	Assign Date 	Owner
+5.0.0.0 	5.0.255.255 	65536 	23/04/12 	Syrian Telecom
+5.134.224.0 	5.134.255.255 	8192 	10/07/12 	Sama Group Ltd.
+31.9.0.0 	31.9.255.255 	65536 	13/04/11 	Syrian Telecom
+31.193.64.0 	31.193.79.255 	4096 	27/04/11 	"Omniya" LLC
+37.48.128.0 	37.48.191.255 	16384 	24/01/12 	MTN Syria
+37.48.192.0 	37.48.223.255 	8192 	24/01/12 	MTN Syria
+46.53.0.0 	46.53.127.255 	32768 	20/08/10 	sawa
+46.57.128.0 	46.57.255.255 	32768 	11/10/10 	Syriatel Mobile Telecom
+46.58.128.0 	46.58.255.255 	32768 	18/10/10 	MTN Syria
+46.161.192.0 	46.161.255.255 	16384 	22/11/10 	Roya telecommunication Co.Ltd.
+46.213.0.0 	46.213.255.255 	65536 	20/12/10 	Syriatel Mobile Telecom
+77.44.128.0 	77.44.255.255 	32768 	20/12/06 	Syrian Computer Society, scs
+78.110.96.0 	78.110.111.255 	4096 	08/08/07 	sawa
+78.155.64.0 	78.155.95.255 	8192 	30/07/07 	Syriatech
+82.137.192.0 	82.137.255.255 	16384 	10/07/03 	Syrian Telecom
+88.86.0.0 	88.86.31.255 	8192 	13/02/06 	Syrian Computer Society, scs
+90.153.128.0 	90.153.255.255 	32768 	07/11/06 	AYA Internet Service Provider
+91.144.0.0 	91.144.63.255 	16384 	19/09/06 	Syrian Telecom
+94.141.192.0 	94.141.223.255 	8192 	15/12/08 	sawa
+94.252.128.0 	94.252.255.255 	32768 	30/09/08 	Syriatel Mobile Telecom
+95.140.96.0 	95.140.111.255 	4096 	04/03/09 	ABDStar and Bisher Alkassem
+95.159.0.0 	95.159.63.255 	16384 	08/04/09 	RUNNET
+109.238.144.0 	109.238.159.255 4096 	26/01/10 	Charif, Fakir & Co.
+130.0.240.0 	130.0.255.255 	4096 	21/10/11 	MTN Syria
+130.180.128.0 	130.180.191.255 16384 	21/10/11 	MTN Syria
+178.52.0.0 	178.52.255.255 	65536 	30/12/09 	Syriatel Mobile Telecom
+178.171.128.0 	178.171.255.255 32768 	12/04/10 	MTN Syria
+178.253.64.0 	178.253.127.255 16384 	01/06/10 	Syrian Telecom
+188.139.128.0 	188.139.255.255 32768 	20/05/09 	Syriatel Mobile Telecom
+188.160.0.0 	188.160.255.255 65536 	13/05/09 	MTN Syria
+188.229.128.0 	188.229.255.255 32768 	07/01/11 	MTN Syria
+188.247.0.0 	188.247.31.255 	8192 	24/08/09 	Roya telecommunication Co.Ltd.
+212.11.192.0 	212.11.223.255 	8192 	22/05/08 	Charif, Fakir & Co.
+213.178.224.0 	213.178.255.255 8192 	03/03/03 	Syrian Computer Society, scs
+217.20.208.0 	217.20.223.255 	4096 	07/06/10 	ABDStar and Bisher Alkassem
+
+
+IRAQ:
+
+From IP 	To IP 	     Total IPs 	Assign Date 	Owner
+5.42.192.0 	5.42.223.255 	8192 	18/05/12 	Midya Telecom for telecommunications-LTD
+5.149.96.0 	5.149.111.255 	4096 	16/07/12 	Pure Line Co. For Telecommunications & Internet Ltd.
+37.17.128.0 	37.17.159.255 	8192 	19/12/11 	AL SARD TRADING AGENCIES CO. LIMITED
+37.77.64.0 	37.77.79.255 	4096 	01/02/12 	BAHR ALIRAQ General Trading Limited Liability Company
+37.236.0.0 	37.239.255.255 	262144 	13/04/12 	EarthLink Ltd. Communications&Internet Services
+46.253.128.0 	46.253.143.255 	4096 	18/01/11 	Computer Data Networks limited
+62.201.192.0 	62.201.255.255 	16384 	29/11/07 	IQ Networks
+78.109.224.0 	78.109.239.255 	4096 	25/07/07 	SCIS
+81.90.16.0 	81.90.31.255 	4096 	18/04/06 	TigrisNet
+81.95.80.0 	81.95.95.255 	4096 	22/05/06 	Ripe NCC 
+91.106.32.0 	91.106.63.255 	8192 	21/06/12 	Hala Al Rafidain Company for Communications and Internet LTD.
+91.108.192.0 	91.108.255.255 	16384 	15/06/12 	City Telecom Co. LTD.
+93.91.192.0 	93.91.207.255 	4096 	16/05/08 	Newroz Telecom Ltd.
+95.159.64.0 	95.159.127.255 	16384 	24/04/09 	Goran Net ISP Ltd.
+95.170.192.0 	95.170.223.255 	8192 	06/02/09 	Newroz Telecom Ltd.
+109.127.64.0 	109.127.127.255 16384 	07/12/09 	Newroz Telecom Ltd.
+109.224.0.0 	109.224.63.255 	16384 	09/03/10 	EarthLink Ltd. Communications&Internet Services
+109.237.192.0 	109.237.207.255 4096 	18/01/10 	RIPE NNC 
+130.193.128.0 	130.193.255.255 32768 	26/10/11 	Newroz Telecom Ltd.
+131.117.224.0 	131.117.255.255 8192 	16/03/12 	AL SARD TRADING AGENCIES CO. LIMITED
+149.255.192.0 	149.255.255.255 16384 	22/08/11 	EarthLink Ltd. Communications&Internet Services
+151.236.160.0 	151.236.191.255 8192 	14/08/12 	Al Atheer Telecommunication-Iraq Co. Ltd. Incorporated in Cayman Islands
+176.241.80.0 	176.241.95.255 	4096 	05/12/11 	Hayat for Internet & communication LLC
+188.72.0.0 	188.72.63.255 	16384 	07/07/09 	CellNet ltd
+212.126.96.0 	212.126.127.255 8192 	25/05/10 	Al-Sard Company for Trading agencies Ltd.
+213.188.64.0 	213.188.95.255 	8192 	11/12/07 	  
