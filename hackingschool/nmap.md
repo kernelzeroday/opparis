@@ -110,7 +110,11 @@ Maybe you just want to look for stuff across the entire internet.
 
 Let's add in the power of the nmap scripting engine to grab and display banners on the ports we are scanning!
 
-nmap -p 80 --script=banner -vv -A -n -Pn -iR 0``
+`nmap -p 80 --script=banner -vv -A -n -Pn -iR 0`
+
+Or we can use the ftp-anon script to check for anonymous logins! We don't need service scanning for this, since we will be checking if we can just go ahead and log in.
+
+`nmap -p 21 --script=ftp-anon -vv -n -Pn -iR 0`
 
 Happy scanning! 
 
