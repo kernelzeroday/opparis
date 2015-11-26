@@ -1,0 +1,361 @@
+===============================================================================                                                                   
+                                       *         *                 
+                                     **        **                  
+                                     **        **                  
+                                     **        **                  
+                                     **        **                  
+            *** **** ****     ***    **  ***   ** ****     ****    
+             *** **** ***  * * ***   ** * ***  *** ***  * * ***  * 
+              **  **** **** *   ***  ***   *** **   **** *   ****  
+              **   **   ** **    *** **     ** **    ** **    **   
+              **   **   ** ********  **     ** **    ** **    **   
+              **   **   ** *******   **     ** **    ** **    **   
+              **   **   ** **        **     ** **    ** **    **   
+              **   **   ** ****    * **     ** **    ** **    **   
+              ***  ***  *** *******  **     **  *****    ***** **  
+               ***  ***  *** *****    **    **   ***      ***   ** 
+                                            *                      
+                                           *                       
+                                          *                        
+                                         *                         
+===============================================================================
+                         mehba's newbie guide v20151123
+===============================================================================
+
+Introduction
+=======================================
+
+    Lots of newbies joining lately with no clue about the basics of security or 
+    how to keep themselves anonymous online. This document is not exhaustive, 
+    but is intended as a primer. 
+
+    I'm going to make some assumptions in this document. 
+        1) You're not stupid
+        2) You know how to use Google (or duckduckgo or disconnect.me)
+        3) Rather than ask dumb questions, you know to search first.
+        4) You have a basic understanding of how your OS works
+    
+    If you do not know #3 then #1 is probably not going to apply to you. 
+
+    You probably already know a lot of what I am going to share in this 
+    document. I am targetting this at beginners. Everyone has to start 
+    somewhere, and I'm tired of answering the same questions over, or watching 
+    people lose their shit at the new guy in the channel that wants to help, but
+    doesn't know where to start.
+
+    So this covers the basics. This is not an operational manual. This will not
+    teach you to be a "hacker" (don't ever self-apply that word) nor will it 
+    teach you how to crack Gmail accounts or break into your ex girlfriend's 
+    Snapchat account.
+
+    This IS philosophy ala mehba. And this *IS* a long read. Very long.
+
+    Want to know why I'm so grumpy on IRC? Then this doc is definitely for you. 
+    Chances are, by the end of reading this, IF you do actually read it, you'll
+    have a better understanding of how to get on (and stay on) my good side.
+
+
+
+Contents
+=======================================
+
+    *) Introduction
+    *) Contents
+    *) The Mentality
+    *) The Knowledge
+    *) The Tools
+    *) The Legalities
+    *) Final Thoughts
+
+
+
+The Mentality
+=======================================
+
+Whether you are participating in an Anonymous Op, or just doing your own thing,
+there are a few things you need to get through your head.
+
+Firstly, you are not a hacker. Do not ever refer to yourself as a hacker. Do 
+not even think about it. If others call you a hacker, ignore them. Think about 
+it as if it were Fight Club. Same deal here. 
+
+    The first rule: you do not talk about what you do online.
+    The second rule: you do not talk about anything you do online.
+    Third rule : You do not talk about yourself at all. Even after the Op ends.
+    Fourth Rule : Don't trust *ANYBODY* online.
+
+Attention is bad. You do not want attention. Everything you do needs to be done
+quietly and without fanfare. Do not brag or boast about your achievements. Shut 
+your pie hole and listen, but never talk about what you do and who you do it 
+with. Never talk about a target, regardless of whether you were successful or
+failed miserably. It is the fastest way to get caught or worse.
+
+You don't know who I am. I might be some kid in Japan or some Nigerian Prince. I
+might live in a R.V, wear tin foil hats, and travel across the deserts of the US
+to avoid being caught. I might be camping out in the mountains of Austria or 
+relaxing on the beaches of Australia. But one thing is for sure. I will not ever
+tell you the honest truth about who I am or what I do. 
+
+I am just some nobody you never heard of, that hangs out on the Internet and 
+does... nothing. And that is all you are too. You have no reputation. You have 
+no achievements. You're just another nobody on the internet. And if you're smart
+you will keep it that way.
+
+
+
+The Knowledge
+=======================================
+
+My goal, my very mission, is to learn. Everything I do must be about expanding 
+knowledge. But that knowledge cannot be given to you. You have to earn it and 
+learn it for yourself. The Internet is so full of freely available lessons and 
+tutorials on every subject you could ever want. Books can be found on almost 
+*EVERY* subject you can imagine. 
+
+When you see something you do not understand or know, your first reaction must
+always be to use Google to look up information. Use what you find there to then
+expand the places you look. Whether to books or deeper into the web. Only turn
+to people when you have learned enough to be able to make a considered query. It
+gets very frustrating when people constantly keep having to repeat how the basic
+fundamentals of a subject.
+
+This is true of everything. Whether it is pentesting or writing code in a new 
+language. There are so many tutorials on Python out there, you should never need
+to ask how to write your first "Hello World" code in Python. Or your first 
+crawler/bot for that matter. This is true of programming subjects, of I.T admin
+subjects, or basic networking skills. In fact, it is true of everything you can
+think of.
+
+Don't ask how to use Linux, learn how to use Linux and then ask how to achieve a
+very specific task. Learn how to administer servers. Learn how different 
+platforms behave. Understand the difference between Apache HTTPd, Nginx, and 
+SquidCache. Or between JBoss, Glassfish, and Tomcat. Understand the difference
+between SOCKS4 and SOCKS5 protocols. Or between SSL and TLS. Know why MD5 is bad
+but SHA256 is (currently) good. Understand why DES failed but 3DES worked. What 
+is AES and why is it important to know?
+
+You're on the Internet. So understand networks, especially IPv4 and IPv6. Learn
+the difference between a Netgear DSL modem and a Motorola cable modem. Learn 
+what JunOS is, and what the real IOS is. Understand the difference between a
+old Checkpoint FW-1 firewall and an IPF firewall.
+
+The point being, knowledge is what you need. If you ever want to be taken
+seriously in certain communities, then you need to show a basic understanding of
+what those communities actually do and the environments those communities are 
+in contact with.
+
+Being new is only OK for so long. At some point you have to either learn for 
+yourself, or accept that maybe this isn't for you and find something else that
+catches your imagination or stimulates your interest.
+
+
+
+The Basics
+=======================================
+
+Everyone has their own toolkit they have put together over time. I'm not going
+to go into specifics about the tools you must have or definitely need, but will
+cover off just the very basics.
+
+1) Know your Operating System 
+
+    Whether it's BSD, Windows, Linux or MacOS X, know how to use it. By this I 
+    mean be familiar with the shell. Know how to use the command line. 
+    
+    If it is Windows, know what the Registry is, how to navigate it, how to 
+    modify it and how not to damage it. Know how to use Local and Group Policies 
+    to manage the configuration of your computer. Be able to use and manage the
+    basics from the command prompt, and start learning how to manage the 
+    advanced features using PowerShell.
+    
+    If it's any of the Unix based platforms, including BSD, Linux, and Mac OS X,
+    know the shell. Know how to navigate your system from the shell. Know how to
+    add users or remove users at the shell. Know how to change the settings of 
+    your platform. Understand what /etc is for, or the structure of /usr. Know
+    the difference between /home and /Users. Know what goes in /lib/var and what
+    goes in /var.
+    
+    Understand the difference between a Service and a Daemon. Understand the 
+    difference between init and systemd. 
+    
+    And for all of these, know how to write scripts to automate things. 
+    
+2) Learn how to use and manage VMs
+
+    The choice of host operating system is not really as important as many want
+    you to believe. Most of what you're going to be doing is more often than not
+    going to be done inside a Virtual Machine. There are many VM platforms to
+    chose from, and the features you want should dictate what you end up using.
+    
+    VirtualBox is by far the most common and most popular. It is cross plaform
+    and freely available for non-commercial use. A very large portion of it is
+    also available as Open Source software, with only some features, such as the
+    USB drivers and a few other bits and bobs, requiring a non-open source 
+    license to use.
+    
+    VMWare is often next on the list. The Server version is available for free
+    to most people, while the more feature rich Workstation version is still
+    sold with a commercial license and fee. There is also a VMware Player that
+    is freely available, but cannot be used to create new VMs, only use existing
+    ones.
+    
+    Parallels is very popular on the Mac platform, as is VMWare's Fusion. Both 
+    are primarily intended to give you access to Microsoft Windows based apps
+    on the Mac OS X platform, but can also be used to run other platforms.
+    
+    On Linux you have a few extended choices. But you also have Containers as
+    well as Virtual Machines. Containers are similar to Jails on the Solaris
+    platform, but cross bred with VMs. I tend to think of them as virtualized 
+    applications rather than virtualised machines. That's an over-simplification
+    of what they are, but for this document it works.
+    
+    Containers are becoming very common and a preferred way of sharing tools and
+    utilities. They include all the requirements to run that application built
+    in so, for the most part, they will work regardless of what Linux-based OS
+    is underneath. As long as the hardware architecture matches, you should be
+    good to go.
+    
+    But you also have a lot of VM opportunities as well. VirtualBox and VMWare
+    are definitely available to you, but so are tools like Qemu, KVM, and Xen.
+    
+    Find the combination that works for you. As I said before, the host is 
+    generally not as important as what VM platform you decide to use. Containers
+    can run inside Linux VMs, so you could have Docker containers running on 
+    Ubuntu in a Windows Hyper-V VM on an Amazon AWS instance if you really 
+    wanted to go stupid.
+    
+3) Learn how to parse networks
+
+    Do you know every computer that is on your home network? What about all the
+    services available to you on those computers? Do you know how to find out 
+    what version of what application is listening on Port 80 on a computer on
+    your network?
+    
+    Before you even think about how to do stuff on the internet, you need to be
+    able to apply similar techniques to your home network first. Sometimes it
+    could be dangerous (or even illegal) to perform certain actions against a
+    computer or network that you do not own. But you need to learn how to 
+    perform some actions. So perform them on your own network first.
+    
+    Get a MITM tool such as Ettercap and learn how to monitor the traffic on
+    your network. Learn how to inject packets or change the content of packets 
+    on your network. Get a network sniffer like Wireshark so you can see the 
+    types of traffic on your network.
+    
+    Get a network scanner like Nmap so you can enumerate all the hosts on your
+    network and all the services running on those hosts. Learn how to find out
+    what operating system each host is running, and what software is providing
+    the services on those hosts.
+    
+4) Learn what an exploit actually does
+
+    Applications are the most vulnerable spots of a network connected to the
+    internet. Don't just get a copy of Metasploit and start following tutorials,
+    actually understand what is happening when you use Metasploit tools. Find
+    out why an application crashes when you perform a specific task. Or find out
+    why a buffer overflow is so dangerous. Understand how the Stack works and 
+    why technologies like ASLR were developed to try and reduce the ability of
+    a vulnerability to execute arbitrary code.
+    
+    Get an understanding of what Cross Site Scripting actually means and why it
+    is one of the biggest causes of vulnerabilities in modern websites. Learn
+    about directory traversal. Understand why SQL injection works and how it can
+    lead to more than just data dumps.
+    
+    One of the biggest problems that has always faced a community is what has
+    been known as the "script kiddie." These are people (often teens) that get
+    hold of a piece of exploit code and use it, but have no actual understanding
+    of why or how it works. If you don't want to be ridiculed, you don't want to
+    be one of these people. Learn. Understand. 
+    
+    Why is this important? Because you can't always rely on someone else to find
+    a way to do something you need to do. You need to be able to do it for
+    yourself.
+    
+5) Have a purpose
+
+    Having a computer full of tools and exploits is useless unless you have a
+    reason. Let me be brutally honest here. "For the lulz" is the short path to
+    getting yourself locked up. Especially in the USA. 
+    
+    Put it another way. You're not stupid. Obviously you have an interest in 
+    this sort of thing or you wouldn't have read this absolutely massive 
+    document written by someone you have no clue about. So instead of being a
+    target, take advantage of that knowledge and put it to good purpose. Have a
+    moral and ethical code. 
+    
+    Whether you're a blackhat, greyhat, or whitehat, doesn't matter. What I
+    think matters more is that you're doing something because you have an
+    opinion on a subject. Whether that opinion is "I can make money," or "ISIS
+    needs to be removed from the internet," does not ultimately matter.
+    
+    If it's money, then be consistent with that purpose.
+    If it's activism, then be consistent with that purpose. 
+    If it is purely to learn more, then be consistent with that purpose.
+    
+    Understand that over time you will get noticed and you will build a
+    reputation amongst certain circles. That's usually about the time I change
+    my nick and "disappear," but for others that reputation can become 
+    important.
+
+
+    
+The Legalities
+=======================================
+
+    Getting caught is bad. No matter where you live or what the legal code in
+    your home country is. The objective is to do things completely under the
+    radar so that even if people discover something you have done, they never
+    discover whom it was that did it.
+
+    Having said that, you need to be very aware of the legislation in the place
+    you live, and also at the location of any computer or network you target.
+    
+    Everything you do will have consequences. For example, in the US there is a
+    piece of legislation known as the Computer Fraud and Abuse Act. This is the
+    same piece of law that was used to terrorise Aaron Swartz until he commited
+    suicide in an effort to be free of the harrassment from the Federal
+    Government. This legislation is outdated and contains language that is no
+    longer relevant to computer use in an Internet enabled world. But is still
+    used to convict people.
+    
+    There are similar problems in the UK, Europe, Canada, and Australia. 
+    Outdated laws that are used to convict people of things that would not 
+    otherwise be considered a crime  if the law had been written within the last
+    5 or 10 years.    
+    
+    The point is, you need to be aware of the risks before you do something. You
+    need to understand that if you are caught, there are potentially some life
+    altering repurcussions for such actions. Even something as banal as a DDOS
+    can put you in a cell for several years.
+
+    Which really boils down to, are you willing to go to prison for doing the
+    thing you want to do?
+    
+    
+
+Final Thoughts
+=======================================
+
+    Well, not really final thoughts. Just the spot I intend to stop for now.
+    
+    Learning this stuff can open doors to a new world of possibilities on the
+    internet. It can leave you in a very dangerous position, or help you become
+    very rich. 
+    
+    I personally advocate a very light touch. But sometimes that can't be helped
+    or the goal is to create a lot of noise. Just be sure you know how to hide
+    in the noise.
+    
+    You can make some serious money if you do things right. There are some very 
+    good career paths for those that actually put in the effort to learn this 
+    stuff properly. Get a CCIE, CISSP, or even a OSCP certification. People with
+    these certs are always in high demand. You will always be wanted for the 
+    skills these certifications ensure. And knowing a little extra can never be
+    a bad thing either.
+    
+    And if you see me somewhere in your travels, feel free to say hi. I bark,
+    but I don't bite... Much.
+    
+    
+    mehba @ anonops
