@@ -1,0 +1,194 @@
+
+██╗███████╗██╗███████╗    ██╗  ██╗███████╗██╗   ██╗██╗    ██╗ ██████╗ ██████╗ ██████╗     ██╗     ██╗███████╗████████╗
+██║██╔════╝██║██╔════╝    ██║ ██╔╝██╔════╝╚██╗ ██╔╝██║    ██║██╔═══██╗██╔══██╗██╔══██╗    ██║     ██║██╔════╝╚══██╔══╝
+██║███████╗██║███████╗    █████╔╝ █████╗   ╚████╔╝ ██║ █╗ ██║██║   ██║██████╔╝██║  ██║    ██║     ██║███████╗   ██║   
+██║╚════██║██║╚════██║    ██╔═██╗ ██╔══╝    ╚██╔╝  ██║███╗██║██║   ██║██╔══██╗██║  ██║    ██║     ██║╚════██║   ██║   
+██║███████║██║███████║    ██║  ██╗███████╗   ██║   ╚███╔███╔╝╚██████╔╝██║  ██║██████╔╝    ███████╗██║███████║   ██║   
+╚═╝╚══════╝╚═╝╚══════╝    ╚═╝  ╚═╝╚══════╝   ╚═╝    ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═════╝     ╚══════╝╚═╝╚══════╝   ╚═╝  
+========================================================================================================================================
+-Last update 26.11.2015
+
+0x01. Twitter ISIS HashTags (ARABIC)
+====================================
+HashTag                         	English Translation
+-----------------------------------------------------------
+دابق                           	  	Dabeq magazine
+مجله_دابق                        	Dabeq magazine
+الدوله_الاسلاميه                  	Islamic State
+اصدارات_الخلافه                  	khilafa publications
+ولايه_سيناء                      	sinai state
+تقارير_الولايات                  	state report
+تنظيم_الدولة                    	state organization
+حركة_السباب_المجاهدين           	shabab mujahidin movement
+مركز_الحياة_للإعلام               	hayat media center
+حركة_الشباب_المجاهدين           	shabab mujahidin movement
+جيش_الحسبة                      	hassabat army
+جيش_السلف                       	salaf army
+معا_لتنظيف_تويتر_من_الملحدين    	together against seculiars on twitter
+جيش_السنة                       	sunni army
+جبهة_النصرة                     	nusra front
+أجناد_الشام                     	ajnad sham
+فيلق_الشام                      	sham legion
+الـــــــرافـــضــــــــــة     	Rafida
+جيش_الفاروق                     	faruq army
+جيش_عمر                         	omar army
+جيش_العسرة                      	ousra army
+إذاعة_الأندلس                    	andalous radio
+وكالة_شهادة                     	shahadat agency
+مؤسسة_الكتائب                   	legions institution
+اخبار_الخلافه                    	khilafa news
+البغدادي                        	baghdadi
+ولاية_خراسان                     	kharassan state
+دولة_الخلافة                     	khilafa state
+تنظيم_قاعدة                     	qaeda organization
+تنظيم_الدولة_الاسلامية            	islamic state organization
+وكالة_أعماق                     	Aamaq Agency
+الحصاد_الیومی                   	Daily 
+
+
+0x02. Twitter ISIS HashTags (ENGLISH)
+=====================================
+HashTag                         
+-------
+BaqiyahFamily               		VV==== Updated 20.11.15 ======VV
+AlbayanRadio
+KhilafahNews
+ISISpropoganda
+AlHayatMediaCenter
+WilayatSalahuddin
+Rafidha
+WilayatBarqa
+IslamicWelfareState
+Baqiyah
+AnsarAlKhilafahMedia
+‪‎Caravan_Of_Martyrs‬
+‪‎WilayatHadramout‬
+Wilayat
+KhilafahVideos
+hilafet_haberleri
+DieInUrRageKuffar
+Kuffar
+kafir
+inshallah
+mashallah
+Dabiq12
+AFG
+WilayatKhurasan
+TürkiyeveIrkçılıkAteşi      		VV==== Updated 22.11.15 =====VV
+toParisWithRevenge
+toParisWithRevenge
+ParisAtacks
+RAQQA
+Sirte
+
+
+
+
+0x03. ISIS PHRASES (Updated 19.11.15)
+=====================================
+PHRASE                                              	ENGLISH TRANSLATION
+---------------------------------------------------------------------------
+وسائل إعلام المجاهدين                                	media Mujahideen
+إعلام البلاتفورم                                      	Media Alblattform
+إعلام الزهراء                                   	Media Zahra
+القاعدة في المغرب الاسلامي                   	        Al-Qaeda in the Islamic Maghreb
+منتدى اليقظة الإسلامي                           	      	Islamic awakening forum
+إعلام أجناد الدولة الإسلامية                     	Inform the hosts of the Islamic state.
+الدولة الإسلامية                                      	Islamic state.
+مجلس شورى المجاهدين                                 	Mujahideen Shura Council.
+المجاهدين                                           	mujahideen
+أسود                                                	black
+الجهاد                                              	Jihad
+كافر                                                	infidel
+استشهاد                                             	martyrdom
+إسمـعـوا منّا إن أردتم الإنصاف                        	Hear us if you want fairness.
+جهـادنا لتحكيـم الشريـعة                            	jihad of the arbitration law.
+مُــــحَــــمْــــدا وَ صــحـبَــه دولة الإسلام            Muhammad and his companions state of Islam.
+إمــارة الـعـراق - حيث مصارع الرجال                 	loyalty to the Muslims and disavowal of the infidels.
+تقرير                                               	Report
+داعش                                                	Daash
+عبوة أخرىa                                          	nother explosive device
+الخلافة الاسلامية                                      	Islamic Caliphate
+وهلاك وإصابة                                         	killed and injured
+الموت للغرب                                         	death to the west
+الإخوة                                               	brothers
+دمى                                                 	puppets
+وسائل إعلام المجاهدين                                	media Mujahideen
+إعلام البلاتفورم (القاعد                      		Media Alblattform (swivel
+إعلام البلاتفورم                                      	Media Alblattform
+إعلام الزهراء                                        	Media Zahra
+القاعدة في المغرب الاسلامي                            	Al-Qaeda in the Islamic Maghreb
+القاعدة في المغرب الاسلامي: إعلام الأندلس               	Al-Qaeda in the Islamic Maghreb: Media Andalusia
+القاعدة : منتدى الفداء                              	rule: forum redemption
+القاعدة : إعلام الشباب                               	rule: Youth Media
+القاعدة : إعلام التحية                               	rule: Media greeting
+الاناث المناصرات لحركة الشباب                        	female partisans of the youth movement.
+الشباب: إعلام الكتائب ( فرع الدولة الإسلامية )         	Youth: Media battalions (Islamic State Branch)
+أنصار الإسلام : الجناح الإعلامي                         	Ansar al-Islam: Media Wing
+أنصار الشريعة (تونس)                                	Ansar al-Sharia (Tunisia)
+مجلة AQAP الإلهامية                                  	AQAP inspirational magazine
+الجيش الإسلامي في العراق : أخبار البراق               	Islamic Army in Iraq: News Buraq
+منتدى اليقظة الإسلامي                                 	Islamic awakening forum
+إعلام أجناد الدولة الإسلامية                           	inform the hosts of the Islamic state.
+الدولة الاسلامية : إعلام الإعتصام                       	Islamic state: Media sit
+أخبار الدولة الإسلامية في ولاية الانبار                 	Islamic State News in the state of Anbar
+الدولة الإسلامية : أخبار ولاية ديالا                    	Islamic State: News mandate of Diyala
+الدولة الإسلامية : فرقة غزة                           	Islamic State: Gaza Division
+الدولة الإسلامية                                      	Islamic state.
+الدولة الإسلامية : أخبار ولاية الرقة                   	Islamic State: News mandate of tenderness
+الدولة الإسلامية : أخبار ولاية جنوب العراق             	Islamic State: News mandate of southern Iraq.
+جبهة النصرة : إعلام البصيرة                          	Front victory: Media insight
+جبهة النصرة : المنارة البيضاء : ولاية ادلب           	Front victory: white lighthouse: the state of Idlib
+جيش الأمة في أكناف بيت المقدس: إعلام الراية           	Army of the Nation in the environs of Jerusalem: Media Ensign
+جيش الأمة في أكناف بيت المقدس: أخبار عرين المجاهدين 	Army of the Nation in the environs of Jerusalem: News Lair mujahideen
+ستديوهات جند الله                                    	studios Jundallah
+سرايا العشتار : المقاومة الإسلامية في البحرين         Saraya Ashtar: Islamic Resistance in Bahrain.
+مجلس شورى المجاهدين                                 	Mujahideen Shura Council.
+منتدى شموخ الاسلام                                    	forum Hmokh Islam.
+طالبان: ستديو الإمارة                                	Taliban: Solo emirate
+تحريك طالبان - باكستان                              	moving the Taliban - Pakistan
+تحريك طالبان - باكستان : إعلام عمر                   	moving the Taliban - Pakistan: media age.
+الحزب الإسلامي التركستاني : صوت الإسلام                 	Islamic Party of Turkestan: the voice of Islam.
+المجاهدين                                           	mujahideen
+أسود                                                	black
+الجهاد                                              	Jihad
+كافر                                                	infidel
+استشهاد                                             	martyrdom
+الُدًؤٌلُهّ الُاسّلُامُيّهّ بُاقًيّهّ صّامُدًهّ                          	Aldalh rest during the Islamic steadfast
+ تّمُتّدً بُاقًيّهّ بُاذِنَ الُمُجَيّدً عّلُئ نَهّجَ                     	Rest during stretching willing Majid categorize approach
+ الُتّؤٌحَيّدً بُرًغًمُ                                       	Despite Altahad
+اهّلُ الُشَرًك ؤٌالُتّنَدًيّد                                  	The people of shirk Aaltended
+ابو هريرة                                           	Abu huraira
+مِنْ لُبْنَان المُسْلِم كُلُنَاْ دَوْلَةُ الخِلافَةِ الإسْلامِيَّة            From Lebanon, we all recognized the Islamic caliphate
+وَإنِّي لأهلِ الشَّرِّ بالشَّرِّمُرصِدُ                             	I am evil people Bacharmrsd
+وَإنِّي لِذي سِلْمٍ أذلُّ مِنَ الأرضِ                            	I am the one who humiliated him from the ground
+المصمم أبـوهـاجر                                    	Designer Obohajr
+سـأظـلُ أمـطِـرهم                                     	I will shower them
+فطايس                                               	Aftaas
+الا_طحين                                             	Ala_tahin
+ولاية_برقة                                           	To Aah_briqh
+ولاية_فزان                                           	To Aah_vzan
+ولاية_طرابلس                                         	To Aah_tarabuls
+ولاية_تكريت                                          	To Aah_tkirc
+ولاية_الرقة                                          	To Aah_alriqh
+دولة_الخلافة                                         	Dolh_alkhlavh
+ولاية_خرسان                                          	To Aah_khrsan
+ولاية_البركة                                         	To Aah_albarakh
+ولاية_دجلة                                           	To Aah_djlh
+الروافض                                             	Shiites
+أقسمت يا نفس لتنزلن لتنزلن أو لتكرهنه إن أجلب       I swear to you, the same Tensln to Tensln or Tlnh that bring
+فـ لتبذل في سبيـل الله                             	P to make for the sake of God.
+إسمـعـوا منّا إن أردتم الإنصاف                        	Hear us if you want fairness.
+جهـادنا لتحكيـم الشريـعة                            	jihad of the arbitration law.
+مسجد ابن تيمية                                      	Ibn Taymiyyah mosque
+نجاني الله بفضله مجزرة                               	God Njani thanks massacre
+في ظل الخلافة الإسلامية أدامها الله                    	under the Islamic Caliphate Adamha of God.
+يارب شهادة في سبيلك                                 	Lord certificate in your path.
+سوف نبقى هنا                                        	We would stay here.
+ي الحسابي الثالث                                    	j arithmetic III
+غـَـدا نــلــقــى الأحِــبــة                          	Tomorrow we meet Valentines
+مُــــحَــــمْــــدا وَ صــحـبَــه دولة الإسلام            Muhammad and his companions state of Islam.
+إمــارة الـعـراق - حيث مصارع الرجال                 	Emirate of Iraq - where the wrestler men.
+الولاء للمسلمين والبراء من المشركين                  	loyalty to the Muslims and disavowal of the infidels.
+ﺗَﻜَﻠَّﻢْ ﻭَﺳَﺪِّﺩْ ﻣَﺎ ﺍﺳْﺘَﻄَﻌْﺖَ ﻓَﺈِﻧَّﻤَﺎ                           	spoke and I just hit what you can.
+ﻛَﻼَﻣُﻚَ ﺣَﻲٌّ ﻭَﺍﻟﺴُّﻜُﻮﺕُ ﺟَﻤَﺎﺩُ                                	Your words are alive and remain silent inanimate
