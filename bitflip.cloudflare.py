@@ -1,8 +1,8 @@
-python script that takes in a list of urls and prints out if they are behind cloud flare 
+#python script that takes in a list of urls and prints out if they are behind cloud flare 
 
-file name: detect-cf.py
-useage: python detect-cf.py list_of_urls.txt
-notes: one url per line in the text file
+#file name: detect-cf.py
+#useage: python detect-cf.py list_of_urls.txt
+#notes: one url per line in the text file
 
 import requests
 import sys
