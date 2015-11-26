@@ -1,0 +1,35 @@
+How Your Stupidity May Help Terrorists
+
+Want to help fight Daesh? Make sure you're not doing more harm than good. Otherwise, you may as well
+ be on their side. 
+
+First, realize that you are a civilian stepping into a digital battlefield that is directly linked 
+to a physical battlefield. If you DDOS an NSA-monitored deep web Daesh chat, you may well cut off 
+actionable intelligence about where an ambush is being set up. You could be the cyber equivalent 
+of a civilian poking his head out in a firefight, blocking a direct shot at a high value target. 
+
+Second, consider whether you, personally, should be taking on this target. If you're reading this
+ right now, your skills are complete shit compared to the white, grey, and blackhats hired by 
+American and European government. You are a civilian learning to shoot an M-16, and they are the 
+marines. So if you learn that there's a nest of heavily armed terrorists over the next hill, are 
+you going to run in firing blindly to gain glory? Let them scatter and regroup somewhere more 
+secure? Or are you going to tip off the guys with blackhawks and cruise missiles? For those who
+ don't trust governments any under circumstances, at the very least you should make sure you've
+ got backup that knows what they're doing.
+
+Third, in the same way that drones blowing up random civilians helps terrorist recruitment, randomly 
+targeting accounts without vetting your information can lead to the appearance of outright Islamophobia
+ and harassment of muslims. Do you need to DDOS a website when you could just tell the admin they've got
+ Daesh presence?
+
+Fourth, when non-state actors have stopped terrorist attacks by Daesh, it was not through DDOS and report
+ing twitter handles. It was by infiltration and gathering information. Tracking and geolocating tweets,
+ not reporting accounts, stopped a Tunisian repeat of the Sousse beach massacre. And even in that case,
+ the delta force of non-state actors tipped off the men with cruise missiles instead of taking the next plane to Tunisia. DDOS should be reserved for targets where it is self-evident that no intelligence can be gained from a source (example: a deep web site that does nothing but replay the same propaganda videos).
+
+Fifth, ask yourself why you're doing this. If you could stop a terrorist attack tomorrow, would you be
+ absolutely fine that no one ever found out? Do you feel that you are only “fighting terrorism” when
+ you directly interfere with their lives, no matter how switfly (example: DDOS a forum or Rick Roll 
+a hashtag)? Do you want to help, or do you want war stories? One mindset will make you an asset in 
+fighting one of the world's greatest current threats. The other makes you worse than inactive; it 
+makes you a liability.
