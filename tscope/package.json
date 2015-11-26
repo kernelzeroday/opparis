@@ -1,11 +1,12 @@
 {
   "name": "tscope",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.0",
+  "description": "a command-line tool for Twitter-data extraction.",
   "main": "tscope",
   "dependencies": {
     "chalk": "^1.1.1",
     "commander": "^2.9.0",
+    "lodash": "^3.10.1",
     "pluralize": "^1.2.1",
     "twit": "^2.1.1"
   },
@@ -13,8 +14,8 @@
     "watch": "^0.16.0"
   },
   "scripts": {
-    "watch": "watch 'clear && npm test' ./",
-    "test": "node tscope"
+    "watch": "watch 'clear & npm test' ./",
+    "test": "node tscope -H@U -c 5"
   },
   "license": "ISC"
 }
