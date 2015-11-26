@@ -12,14 +12,12 @@ will return something like this:
 
 `
 [kod@19b53ae5-14f9-c774-e344-e89c7712675c ~]$ nmap localhost
-
 Starting Nmap 6.47 ( http://nmap.org ) at 2015-11-26 09:16 UTC
 Nmap scan report for localhost (127.0.0.1)
 Host is up (0.00014s latency).
 Not shown: 999 closed ports
 PORT   STATE SERVICE
 22/tcp open  ssh
-
 Nmap done: 1 IP address (1 host up) scanned in 27.79 seconds
 `
 
@@ -39,14 +37,12 @@ and we get
 
 `
 [kod@19b53ae5-14f9-c774-e344-e89c7712675c ~]$ nmap localhost -A
-
 Starting Nmap 6.47 ( http://nmap.org ) at 2015-11-26 09:21 UTC
 Nmap scan report for localhost (127.0.0.1)
 Host is up (0.000087s latency).
 Not shown: 999 closed ports
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 7.1 (protocol 2.0)
-
 Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 27.89 seconds
 `
