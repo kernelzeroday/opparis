@@ -1,6 +1,6 @@
 // Search for a user's tweets and display geolocation data
 
-// Useage: node script.js screen_name
+// Usage: node script.js screen_name
 
 // DEPS: npm install twitter
 
@@ -21,5 +21,3 @@ client.get('statuses/user_timeline', {screen_name: process.argv[2]}, function(er
         console.log();
 //      client.say('tweet id:',tweet.id, 'user id:', tweet.user.id, 'tweet: ', tweet.text);
   });
-
-
