@@ -1,8 +1,5 @@
-  ^    ^    ^    ^    ^    ^    ^    ^    ^    ^    ^ 
 
- /e\  /l\  /i\  /t\  /e\  /r\  /e\  /t\  /a\  /r\  /d\ 
-
-<___><___><___><___><___><___><___><___><___><___><___>
+ /e\  /l\  /i\  /t\  /e\  /r\  /e\  /t\  /a\  /r\  /d\
 
 
 Anonymity is the quality or state of being unknown to most people or just plain being 
