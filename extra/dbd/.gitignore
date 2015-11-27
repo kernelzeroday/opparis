@@ -1,0 +1,6 @@
+*.exe
+dbd
+dbd.h
+build/
+binaries/
+conf/
