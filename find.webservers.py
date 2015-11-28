@@ -6,7 +6,7 @@ You need a list of subnets to scan
 
 For example, all possible syrian networks:
 
-http://pastebin.com/raw.php?i=9BpEdhLb
+https://ghostbin.com/paste/meuxy
 
 Save it as 'ips.txt' in the same directory as this script
 
@@ -25,7 +25,6 @@ from ipaddress import *
 subprocess.call('clear', shell=True)
 
 # Get list of syrian IPS:
-
 
 
 # open the list of ips
