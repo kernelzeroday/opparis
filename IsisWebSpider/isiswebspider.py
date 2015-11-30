@@ -168,32 +168,36 @@ def check_page(url, strings):
       - a set of link found of the page
       - a set of pictures found of the page
     """
-    domain = get_domain_name(url)
-    f = requests.get(url)
-    html = ""
-    links = list()
-    imgs = list()
-    dstrings = list_to_dict(strings)
-    #Look over every line, add text into html var
-    #and search strings
-    for line in f:
-        #...Check each string
-        for string in strings:
-            #Ignoring the lower or uppercase
-            if string.lower() in line.lower():
-                dstrings[string] += 1
-        html += line
+    try:
+        domain = get_domain_name(url)
+        f = requests.get(url)
+        html = ""
+        links = list()
+        imgs = list()
+        dstrings = list_to_dict(strings)
+        #Look over every line, add text into html var
+        #and search strings
+        for line in f:
+            #...Check each string
+            for string in strings:
+                #Ignoring the lower or uppercase
+                if string.lower() in line.lower():
+                    dstrings[string] += 1
+            html += line
 
-    soup = BeautifulSoup(html)
+        soup = BeautifulSoup(html)
 
-    for a in soup.find_all("a"):
-        links.append(create_complete_link(a.get('href'), domain))
+        for a in soup.find_all("a"):
+            links.append(create_complete_link(a.get('href'), domain))
 
-    for img in soup.find_all('img'):
-        full_url = create_complete_link(img.get('src'), domain)
-        imgs.append(full_url)
+        for img in soup.find_all('img'):
+            full_url = create_complete_link(img.get('src'), domain)
+            imgs.append(full_url)
 
-    return (dstrings, set(links), set(imgs))
+        return (dstrings, set(links), set(imgs))
+    except Exception as e:
+        print "Failed to load " + url + "\n"
+        return (dict(), set([]), set([]))
 
 
 def check_site(url, strings, output, cascade, images_folder):
@@ -219,7 +223,8 @@ def check_site(url, strings, output, cascade, images_folder):
     links = set([url])
     forbidden = [".ogg", ".tex", ".pdf", ".mp3", "mp4", ".ods", ".xls", ".xlsx",\
      ".doc", ".docx", ".zip", ".tar", ".gz", ".ggb", ".cls", ".sty", ".avi", ".flv"\
-     ".mkv", ".srt", ".css"]
+     ".mkv", ".srt", ".css", '.rar', '.png', '.jpg', '.gif', '.ttf', '.jpeg', ".sh", '.exe'\
+     '.msi', '.wmw']
     #While we have not check all URL
     while links - viewed_links != set([]):
         #Check all links (not already viewed) for this page
