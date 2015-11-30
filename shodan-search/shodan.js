@@ -1,56 +1,113 @@
 //npm install -g shodan-client
-//node shodan.js query facets apikey
+//node shodan.js query apikey
 
-var ShodanClient = require('shodan-client'),
+'use strict';
+
+// https://developer.shodan.io/api
+
+var util = require('util'),
+
+    ShodanClient = require('shodan-client'),
+
     options = {
-        key: process.argv[4],
+        key: process.argv[3],
+        timeout: 15000
     },
     shodanClient = new ShodanClient(options),
-    searchOptions = {
-        query: process.argv[2],
-        limit: 5,
-        facets: process.argv[3],
-        minify: false
-    };
+    searchOptions,
+    // countOptions,
+    hostOptions;
 
-shodanClient.search(searchOptions,  function (data, err) {
+
+// Minimal required parameters
+hostOptions = { ip: '1.1.1.1' };
+
+// Full supported params
+// hostOptions = {
+//     ip: '1.1.1.1',
+//     history: true,    // default is false
+// };
+
+shodanClient.host(hostOptions, function (err, data) {
+    console.log('\n------------------- host -------------------');
+    if (err) {
+        console.log('ERROR: shodanClient.host: ' + err);
+    } else {
+        console.log(util.inspect(data, { depth : 6 }));
+    }
+});
+
+
+// Full supported params
+// TODO: API still fails with some of them
+searchOptions = {
+    query: process.argv[2],
+    // query: 'asterisk port:5060',
+    // query: encodeURIComponent('openssh port:22'),
+    // query: 'openssh+port%3A22',
+    // query: 'penssh%20port%3A22',
+    limit: 5,
+    // facets: 'port:100',
+    minify: false
+};
+
+// A premium account is needed in some cases, in the doc:
+// " Uses 1 query credit if:
+// - Page number > 1
+// - Search query contains any of the following filters: city,
+// country, net, geo, before, after, org, isp, title, html "
+shodanClient.search(searchOptions,  function (err, data) {
     console.log('\n------------------- search -------------------');
     if (err) {
         console.log('ERROR: shodanClient.search: ' + err);
     } else {
-        console.log(data);
+        console.log(util.inspect(data, { depth : 6 }));
     }
 });
 
-shodanClient.streamBanners(function (data, err) {
-    console.log('\n------------------- streamBanners -------------------');
+// Minimal required parameters
+// countOptions = {
+//     query: 'freepbx'
+// };
+
+// Full supported params
+// countOptions = {
+//     query: 'freepbx',
+//     facets: 'port:100'
+// };
+
+// shodanClient.count(countOptions,  function (err, data) {
+//     console.log('\n------------------- count -------------------');
+//     if (err) {
+//         console.log('ERROR: shodanClient.count: ' + err);
+//     } else {
+//         console.log(util.inspect(data, { depth : 6 }));
+//     }
+// });
+
+shodanClient.resolve('google.com,bing.com', function (err, data) {
+    console.log('\n------------------- resolve -------------------');
     if (err) {
-        console.log('ERROR: shodanClient.streamBanners: ' + err);
+        console.log('ERROR: shodanClient.resolve: ' + err);
     } else {
-        console.log(data);
+        console.log(util.inspect(data, { depth : 6 }));
     }
 });
 
-var searchOptionsExploits = {
-    query: process.argv[2],
-    facets: process.argv[3],
-    page: 1
-};
-
-shodanClient.exploitSearch(searchOptionsExploits,  function (data, err) {
-    console.log('\n------------------- exploitSearch -------------------');
+shodanClient.reverse('74.125.227.230,204.79.197.200', function (err, data) {
+    console.log('\n------------------- reverse -------------------');
     if (err) {
-        console.log('ERROR: shodanClient.exploitSearch: ' + err);
+        console.log('ERROR: shodanClient.reverse: ' + err);
     } else {
-        console.log(data);
+        console.log(util.inspect(data, { depth : 6 }));
     }
 });
 
-shodanClient.profile(function (err,data) {
+shodanClient.myip(function (err, data) {
+    console.log('\n------------------- myip -------------------');
     if (err) {
-        console.log ("ERROR: shodanClient.profile: " + err);
+        console.log('ERROR: shodanClient.myip: ' + err);
     } else {
-        console.log ("Profile query success. You have " + data.credits + " query credits remaining.");
+        console.log(util.inspect(data, { depth : 6 }));
     }
 });
-
