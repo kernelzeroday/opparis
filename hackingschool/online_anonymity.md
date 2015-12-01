@@ -17,6 +17,7 @@ Tools/Tricks of the Trade:
 - Private Browsing
 - Virtual Machines
 - DNS Leak Test
+- Turn off Location Services
 
 
 
@@ -53,8 +54,10 @@ Private Browsing
 
 It is a feature in the browser to prevent websites from tracking you.  This feature is quite common in Tor Browsers.
 
-Additional things to check is to prevent javascript and HTML 5 canvas to be executed by the browser.
+Things to remember:
 
+1. Prevent javascript and HTML 5 canvas to be executed by the browser.
+2. Always avoid sites that uses Google cookies (or cookies in general) or ads
 
 
 Virtual Machines
@@ -70,3 +73,10 @@ DNS Leak Test
 
 
 DNS Leak Test will allow users to verify if their online activity is really anonymous.  To verify you can go to this website, https://dnsleaktest.com, for testing and ways on how to fix any DNS leaks.
+
+
+Location Services
+========================================================
+
+
+Browsers and  Mobile Apps/OS have the capability of tracking your location.  From this information a company, or anyone who has the data,  could create a profile of you.  With your data they could push location based ads and worst track your movement.  Always remember to turn off location services in your OS (desktop and mobile), Browser and Applications.  
