@@ -48,8 +48,7 @@ cd $activeDir
 
 # Check for presence of socat on system
 # Download it if we don't have it
-
-if [ -x "$(socat -v foo)" ];then
+if [ ! $(which socat) == "" ];then
     wget -O $activeDir/socat $scBinUrl
     chmod 775 socat
     socat=".$activeDir/socat"
