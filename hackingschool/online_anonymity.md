@@ -86,4 +86,4 @@ WebRTC and VPN
 =========================================================
 
 
-WebRTC is a special interface that allows computers on different networks to perform special browser-to-browser applications.  An example of these are video chat, voice calling, file sharing and more.  There's no flaw in WebRTC but someone can add in some code that will trick your browser into revealing your real IP address.  To make sure your real IP address is not revealed check test it from this site, http://whatismyipaddress.com/webrtc-test.
+WebRTC is a special interface that allows computers on different networks to perform special browser-to-browser applications.  An example of these are video chat, voice calling, file sharing and more.  There's no flaw in WebRTC but someone can add in some code that will trick your browser into revealing your real IP address.  To make sure your real IP address is not revealed check it from this site, http://whatismyipaddress.com/webrtc-test.
