@@ -18,7 +18,7 @@ Tools/Tricks of the Trade:
 - Virtual Machines
 - DNS Leak Test
 - Turn off Location Services
-
+- WebRTC
 
 
 VPN
@@ -79,4 +79,11 @@ Location Services
 ========================================================
 
 
-Browsers and  Mobile Apps/OS have the capability of tracking your location.  From this information a company, or anyone who has the data,  could create a profile of you.  With your data they could push location based ads and worst track your movement.  Always remember to turn off location services in your OS (desktop and mobile), Browser and Applications.  
+Browsers and  Mobile Apps/OS have the capability of tracking your location.  From this information a company, or anyone who has the data,  could create a profile of you.  With your data they could push location based ads and worst track your movement.  Always remember to turn off location services in your OS (desktop and mobile), Browser and Applications.
+
+
+WebRTC and VPN
+=========================================================
+
+
+WebRTC is a special interface that allows computers on different networks to perform special browser-to-browser applications.  An example of these are video chat, voice calling, file sharing and more.  There's no flaw in WebRTC but someone can add in some code that will trick your browser into revealing your real IP address.  To make sure your real IP address is not revealed check test it from this site, http://whatismyipaddress.com/webrtc-test.
