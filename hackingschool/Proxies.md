@@ -3,6 +3,7 @@
 <br>
 <p>Setting up a proxy is fairly simple and today I am going to teach you how to do it: </p>
 <p>But first, let's say you randomly found a proxy like this one: "<b>1.2.3.4:123</b>", later in the tutorial, we will see you need a port number to setup the proxy, but where is it?<br>Whenever you see an address like that, the number after the colon(:) is the port number, so in this case, the port to be used is 123.</p>
+<p>Fun fact: Most routers, if not all of them have around 1000 ports.</p>
 <p>Let's start: </p>
 <ol>
 <h1>Choosing a proxy: </h1>
