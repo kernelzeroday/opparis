@@ -1,0 +1,2 @@
+cat /bin/bash | od -t x1 | cut -d' ' -f'1' --complement | grep -v 3712270 | sed 's/^/ /g' | sed 's/ /\\\\x/g' | sed 's/^/echo /g' | sed 's/$/\>\>binary/g' | grep -v \* | xclip -selection c
+
