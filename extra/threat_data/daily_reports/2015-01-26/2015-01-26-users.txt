@@ -1,0 +1,9 @@
+admin
+administrator
+backup
+guest
+root
+support
+ubnt
+uucp
+www

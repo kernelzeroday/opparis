@@ -1,0 +1,11 @@
+admin
+bin
+cgi-bin
+DUP
+ghost
+PlcmSpIp
+root
+sbin
+syslog
+ubnt
+zt

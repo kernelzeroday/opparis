@@ -1,0 +1,13 @@
+adam
+admin
+ftp
+ftpuser
+guest
+pi
+PlcmSpIp
+root
+support
+test
+ubnt
+ubuntu
+user

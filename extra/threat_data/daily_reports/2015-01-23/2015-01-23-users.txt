@@ -1,0 +1,15 @@
+adam
+admin
+ftpuser
+guest
+nagios
+pi
+PlcmSpIp
+root
+support
+test
+tester
+ubnt
+user
+vyatta
+www

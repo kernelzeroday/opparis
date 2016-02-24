@@ -1,0 +1,11 @@
+admin
+ftpuser
+guest
+pi
+root
+support
+test
+ubnt
+user
+vyatta
+www

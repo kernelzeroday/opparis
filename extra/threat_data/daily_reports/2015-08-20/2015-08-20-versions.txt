@@ -1,0 +1,3 @@
+SSH-2.0-libssh-0.1
+SSH-2.0-libssh2_1.4.1
+SSH-2.0-libssh2_1.6.0

@@ -1,0 +1,12 @@
+104.255.97.22
+104.255.97.38
+admin
+guest
+PlcmSpIp
+root
+support
+test
+ubnt
+unix
+user
+www

@@ -1,0 +1,11 @@
+http://104.167.16.5/
+http://222.186.190.157:56789/win7
+http://222.186.190.157:56789/win9
+http://23.234.19.202/i/a06
+http://23.234.25.74:1547/ttxsyg
+http://62.210.209.198/79
+http://93.174.93.45/.but.pl
+http://93.174.93.45/h.sh
+http://dl.4players.de/ts/releases/3.0.11.2/teamspeak3-server_linux-amd64-3.0.11.2.tar.gz
+http://download.microsoft.com/download/win2000platform/SP/SP3/NT5/EN-US/W2Ksp3.exe
+http://javadl.sun.com/webapps/download/AutoDL

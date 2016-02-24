@@ -1,0 +1,17 @@
+http://104.156.238.159/79
+http://107.150.178:88/disk
+http://122.10.85.54/
+http://122.114.124.154:1111/xudp
+http://180.97.68.244:23/ppcc\\\
+http://222.186.21.82:7589/xiao
+http://23.234.25.203:15826/udpg\\\
+http://38.68.20.127/i/a09.zip
+http://43.255.191.2/
+http://49.1.244.146/g1
+http://49.1.244.146/g3
+http://49.1.244.146/g6
+http://49.1.244.146/g8
+http://93.174.93.187/dbus.sh
+http://download.microsoft.com/download/win2000platform/SP/SP3/NT5/EN-US/W2Ksp3.exe
+http://grbj.lyjq.org:8989/665544
+http://prdownloads.sourceforge.net/tcl/tcl8.4.16-src.tar.gz

@@ -1,0 +1,5 @@
+admin
+ap-northeast-1
+ec2-54-65-96-68
+pi
+root

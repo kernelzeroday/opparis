@@ -1,0 +1,10 @@
+admin
+ftpuser
+guest
+PlcmSpIp
+root
+support
+test
+ubnt
+ubuntu
+vyatta

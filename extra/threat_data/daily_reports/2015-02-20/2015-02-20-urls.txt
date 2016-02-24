@@ -1,0 +1,16 @@
+http://106.185.24.106/4
+http://106.185.24.106/5
+http://122.10.85.54/
+http://178.33.196.164/
+http://178.33.196.164:443/
+http://178.33.196.164:53/
+http://183.136.213.96:8090/10991
+http://183.136.213.96:8090/10991'
+http://183.136.213.96:8090/bash.bashrc
+http://183.136.213.96:8090/Internet
+http://buhenge.com/z1
+http://buhenge.com/z3
+http://buhenge.com/z4
+http://buhenge.com/z5
+http://buhenge.com/z6
+http://ftp.rxxiaoao.com/install/n8002.rar

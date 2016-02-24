@@ -1,0 +1,7 @@
+SSH-2.0-libssh2_1.4.0
+SSH-2.0-libssh2_1.4.2
+SSH-2.0-libssh2_1.4.3
+SSH-2.0-OpenSSH_6.0p1
+SSH-2.0-paramiko_1.7.5
+SSH-2.0-PuTTY_Local:_May_14_2009_21:12:18
+SSH-2.0-PuTTY_Release_0.62

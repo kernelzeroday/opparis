@@ -1,0 +1,3 @@
+SSH-2.0-libssh2_1.4.2
+SSH-2.0-libssh2_1.4.3
+SSH-2.0-PuTTY_Release_0.62

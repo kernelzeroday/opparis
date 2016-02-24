@@ -1,0 +1,13 @@
+http://111.73.45.231:8080/cccc
+http://122.10.85.54/
+http://173.0.63.225/Sharky/mipz
+http://222.186.31.117:56789/wins6
+http://222.186.31.117:56789/wins8
+http://222.186.31.117:56789/wins9
+http://23.234.19.202/i/a06
+http://23.234.25.74:9620/ttxsyg
+http://43.255.191.2/
+http://66.117.9.14:81/79
+http://93.174.93.45/f.sh
+http://psybnc.at/download/beta/psyBNC-2.3.2-7.tar.gz
+http://psybnc.at/download/precompiled/psyBNC2.3.1-8.precompiled.tar.gz

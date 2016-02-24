@@ -1,0 +1,10 @@
+admin
+default
+guest
+mysql
+postgres
+root
+test
+ubnt
+ubuntu
+user

@@ -1,0 +1,5 @@
+adm
+admin
+recovery
+root
+tech

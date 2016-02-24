@@ -1,0 +1,10 @@
+http://122.10.85.54/
+http://178.33.196.164/
+http://178.33.196.164:443/
+http://178.33.196.164:53/
+http://23.234.60.140/install/8003
+http://23.234.60.140/install/8003]
+http://93.174.93.45/ktx-mipsel
+http://93.174.93.45/mips-ktx
+http://buhenge.com/z1
+http://cachefly.cachefly.net/100mb.test

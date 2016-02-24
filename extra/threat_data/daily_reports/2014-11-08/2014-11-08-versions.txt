@@ -1,0 +1,5 @@
+SSH-2.0-libssh2_1.4.2
+SSH-2.0-libssh2_1.4.3
+SSH-2.0-libssh2_1.4.4-20141103
+SSH-2.0-nsssh2_4.0.0031
+SSH-2.0-paramiko_1.7.5

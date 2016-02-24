@@ -1,0 +1,9 @@
+admin
+cisco
+ftpuser
+PlcmSpIp
+root
+support
+ubnt
+ubuntu
+user

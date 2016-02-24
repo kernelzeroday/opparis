@@ -1,0 +1,4 @@
+bin
+DUP
+root
+ubnt

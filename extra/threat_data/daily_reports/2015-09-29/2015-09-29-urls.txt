@@ -1,0 +1,5 @@
+http://107.158.236.138/
+http://188.209.49.163/nt.sh
+http://211.110.1.32/
+http://216.158.225.23/getbinaries.sh
+http://89.248.168.39/firewall.sh

@@ -1,0 +1,6 @@
+admin
+client
+manager
+operator
+root
+www
