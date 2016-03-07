@@ -1,0 +1,7 @@
+admin
+guest
+root
+support
+test
+ubnt
+user

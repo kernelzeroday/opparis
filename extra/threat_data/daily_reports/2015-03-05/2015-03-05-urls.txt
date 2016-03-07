@@ -1,0 +1,17 @@
+http://23.234.60.140/install/8008
+http://23.234.60.140/install/8008]
+http://61.160.247.14:7711/Maintain.sh
+http://61.160.247.14:7711/Maintain.sh]
+http://93.174.93.45/ktx-mipsel
+http://93.184.66.196/.ppc
+http://93.184.66.196/.ppw
+http://93.184.66.196/.xml.pl
+http://93.184.66.196/.ztx.pl
+http://buhenge.com/z1
+http://buhenge.com/z2
+http://buhenge.com/z3
+http://buhenge.com/z4
+http://cachefly.cachefly.net/100mb.test
+http://cachefly.cachefly.net/100mb.test]
+http://kiss4u.go.ro/smoke.tgz
+http://kiss4u.go.ro/smoke.tgz]

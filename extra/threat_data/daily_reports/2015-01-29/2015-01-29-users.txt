@@ -1,0 +1,6 @@
+admin
+oracle
+root
+shell
+support
+ubuntu

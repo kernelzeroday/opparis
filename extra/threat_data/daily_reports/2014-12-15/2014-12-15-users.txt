@@ -1,0 +1,10 @@
+admin
+ftpuser
+guest
+pi
+PlcmSpIp
+root
+support
+test
+ubnt
+user

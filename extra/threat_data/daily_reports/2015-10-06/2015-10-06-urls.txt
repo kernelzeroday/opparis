@@ -1,0 +1,8 @@
+http://107.158.236.138/
+http://183.60.202.97:1110/xudp\\\
+http://183.60.202.97:1188/xudp\\\
+http://211.110.1.32/
+http://222.186.56.112:6800/Linux-udp61490\\\
+http://222.186.56.112:6800/Linux-udp61490\r\n\\\
+http://msctrldll.pw/cfirewall.sh
+http://msctrldll.pw/dfirewall.sh

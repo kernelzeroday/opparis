@@ -1,0 +1,15 @@
+http://218.244.148.238:8080/bin.sh
+http://218.244.148.238:8080/npc
+http://218.244.148.238:8080/npc1
+http://222.186.31.73:8080/Manager
+http://23.234.60.140/install/8003
+http://61.160.247.104:7711/Maintain.sh
+http://61.164.126.5:7401/sys
+http://93.174.93.45/h.sh
+http://buhenge.com/z1
+http://buhenge.com/z2
+http://buhenge.com/z3
+http://buhenge.com/z4
+http://gblmkd.web44.net/.backup/gblteam2015.tgz
+http://gblmkd.web44.net/.backup/mbs2015.tgz
+http://wget>

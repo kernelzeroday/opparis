@@ -1,0 +1,2 @@
+SSH-2.0-libssh-0.6.0
+SSH-2.0-paramiko_1.15.2

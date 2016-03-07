@@ -1,0 +1,4 @@
+54.177.14.243
+admin
+root
+ubuntu

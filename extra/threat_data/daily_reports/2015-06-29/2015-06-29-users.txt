@@ -1,0 +1,12 @@
+54.171.230.63
+54.171.230.81
+54.191.17.2
+54.191.17.21
+admin
+guest
+kadmin
+pi
+root
+test
+ubnt
+xbian

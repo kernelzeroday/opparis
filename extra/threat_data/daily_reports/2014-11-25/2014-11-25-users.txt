@@ -1,0 +1,6 @@
+admin
+administrator
+root
+support
+test
+user

@@ -1,0 +1,6 @@
+admin
+postmaster
+root
+user
+web
+www

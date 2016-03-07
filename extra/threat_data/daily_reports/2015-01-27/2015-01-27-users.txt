@@ -1,0 +1,16 @@
+
+admin
+Admin
+administrator
+cisco
+ftpuser
+info
+operator
+PlcmSpIp
+root
+super
+supervisor
+support
+test
+ubnt
+user

@@ -1,0 +1,15 @@
+aaron
+admin
+administrator
+david
+default
+ftpuser
+git
+karaf
+nagios
+oracle
+root
+smtp
+sshd
+test
+ts3

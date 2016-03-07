@@ -1,0 +1,15 @@
+admin
+bash
+ftpuser
+guest
+httpd
+info
+nagios
+pi
+root
+support
+test
+tester
+ubnt
+ubuntu
+www

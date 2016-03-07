@@ -1,0 +1,13 @@
+http://122.10.85.54/
+http://178.33.196.164/
+http://178.33.196.164:443/
+http://178.33.196.164:53/
+http://23.234.60.140/install/8005
+http://93.174.93.45/mips-ktx
+http://buhenge.com/z1
+http://buhenge.com/z2
+http://buhenge.com/z3
+http://buhenge.com/z4
+http://buhenge.com/z6
+http://dw4.convertfiles.com/files/0008476001426332651/send.tar
+http://ibrp.pl/wp-content/themes/socialreach/send.zip

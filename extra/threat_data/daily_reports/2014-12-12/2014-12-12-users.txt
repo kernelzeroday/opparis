@@ -1,0 +1,6 @@
+54.183.6.119
+54.183.6.144
+admin
+root
+support
+ubnt

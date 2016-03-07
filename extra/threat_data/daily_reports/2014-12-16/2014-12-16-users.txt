@@ -1,0 +1,15 @@
+adam
+admin
+admin2
+ftpuser
+guest
+nagios
+oracle
+pi
+PlcmSpIp
+root
+support
+test
+ubnt
+ubuntu
+user

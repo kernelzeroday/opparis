@@ -1,0 +1,17 @@
+1
+123
+12345
+admin
+ftp
+guest
+info
+operator
+play
+PlcmSpIp
+root
+support
+sys
+test
+ubnt
+user
+user1

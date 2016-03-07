@@ -1,0 +1,14 @@
+
+2006-11-10 rsh-grind v0.9
+
+* Initial public release
+
+2006-11-17 rsh-grind v0.9.1
+
+* Bugfixes to argument parsing
+* Now displays <null response> which can indicate server isn't keeping up
+
+2007-05-06 rsh-grind v0.9.2
+
+* Removed dependency on Net::Rsh
+* Now works on servers that insist on opening a STDERR connection

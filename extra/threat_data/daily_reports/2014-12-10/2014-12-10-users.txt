@@ -1,0 +1,10 @@
+admin
+default
+ftp
+ftpuser
+guest
+library
+pi
+recovery
+root
+support
